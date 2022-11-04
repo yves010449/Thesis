@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Interactable
+  - Player
+  - Detectors
+  - Trigger
+  - PlayerDetector
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Foreground
+    uniqueID: 2261875393
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: NPC
+    uniqueID: 2166712175
+    locked: 0
+  - name: Player
+    uniqueID: 4215767287
+    locked: 0
+  - name: Border
+    uniqueID: 2046254659
+    locked: 0
+  - name: Roof
+    uniqueID: 3745752681
+    locked: 0

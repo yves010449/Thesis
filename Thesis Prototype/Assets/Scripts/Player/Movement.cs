@@ -1,0 +1,27 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using DialogueEditor;
+
+public class Movement : MonoBehaviour
+{
+    public float MovementSpeed;
+    Rigidbody2D rb;
+    Vector2 input;
+
+    public Vector2 Input { get => input; set => input = value; }
+
+    private void Awake() {
+        rb = GetComponent<Rigidbody2D>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (ConversationManager.Instance.IsConversationActive) {
+            rb.velocity = Vector2.zero;
+            return;
+        }
+        rb.velocity = Input * MovementSpeed;
+    }
+}
