@@ -7,8 +7,11 @@ public class InteractDialogue : Interactions
 {
 
     public NPCConversation[] Conversation;
+
     [SerializeField]
-    int ConversationIndex = 0;
+    int conversationIndex = 0;
+
+    public int ConversationIndex { get => conversationIndex; set => conversationIndex = value; }
 
     private void OnEnable() {
         ConversationManager.OnConversationStarted += ConversationStart;
@@ -24,16 +27,11 @@ public class InteractDialogue : Interactions
     }
 
     private void ConversationEnd() {
-        if(ConversationIndex < Conversation.Length-1) {
-            ConversationIndex++;
-        }
+       
     }
 
 
     public override void Interact() {
-        if(ConversationIndex >= Conversation.Length) {
-            return;
-        }
         ConversationManager.Instance.StartConversation(Conversation[ConversationIndex]);
     }
 

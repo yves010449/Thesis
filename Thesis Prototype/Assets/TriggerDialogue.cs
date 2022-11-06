@@ -2,23 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DialogueEditor;
+using UnityEngine.Events;
 
 public class TriggerDialogue : MonoBehaviour {
     [SerializeField]
-    int TargetConversationIndex;
+    NPCConversation conversation;
 
-   
-    public bool unlock;
+    public UnityEvent OnTrigger;
 
-    InteractDialogue interactTalk;
-    private void Awake() {
-        interactTalk = GetComponentInParent<InteractDialogue>();
-    }
     private void OnCollisionEnter2D(Collision2D collision) {
-        if (!unlock)
-            ConversationManager.Instance.StartConversation(interactTalk.Conversation[TargetConversationIndex]);
-        else {
-            gameObject.SetActive(false);
-        }
+         ConversationManager.Instance.StartConversation(conversation);
+        OnTrigger?.Invoke();
+        gameObject.SetActive(false);
     }
 }
