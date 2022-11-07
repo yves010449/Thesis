@@ -344,6 +344,7 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/VSSettingsProvider.ref.dll"
+"Assets/Animation.cs"
 "Assets/DialogueEditor/Assets/Scripts/Condition.cs"
 "Assets/DialogueEditor/Assets/Scripts/Connection.cs"
 "Assets/DialogueEditor/Assets/Scripts/Conversation.cs"
@@ -374,7 +375,7 @@
 "Assets/Scripts/Player/Movement.cs"
 "Assets/Scripts/Player/PlayerDetector.cs"
 "Assets/Scripts/Player/PlayerInput.cs"
-"Assets/TriggerDialogue.cs"
+"Assets/Trigger.cs"
 -langversion:8.0
 
 /deterministic

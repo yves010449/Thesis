@@ -16,7 +16,7 @@ public class Movement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (ConversationManager.Instance.IsConversationActive) {
             rb.velocity = Vector2.zero;
