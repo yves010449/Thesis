@@ -86,8 +86,9 @@
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
--r:"D:/Development/Unity/Projects/Thesis/Thesis Prototype/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/AOT/Newtonsoft.Json.dll"
--r:"D:/Development/Unity/Projects/Thesis/Thesis Prototype/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"D:/Development/Unity/Projects/Thesis/Thesis/Thesis Prototype/Library/PackageCache/com.unity.cinemachine@2.7.9/Runtime/ThirdParty/clipper_library.dll"
+-r:"D:/Development/Unity/Projects/Thesis/Thesis/Thesis Prototype/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/AOT/Newtonsoft.Json.dll"
+-r:"D:/Development/Unity/Projects/Thesis/Thesis/Thesis Prototype/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"D:/Program Files/Development/Unity/2021.1.12f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/mscorlib.dll"
 -r:"D:/Program Files/Development/Unity/2021.1.12f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.ComponentModel.Composition.dll"
 -r:"D:/Program Files/Development/Unity/2021.1.12f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Core.dll"
@@ -265,6 +266,7 @@
 -r:"D:/Program Files/Development/Unity/2021.1.12f1/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.WebGLModule.dll"
 -r:"D:/Program Files/Development/Unity/2021.1.12f1/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.WindModule.dll"
 -r:"D:/Program Files/Development/Unity/2021.1.12f1/Editor/Data/PlaybackEngines/WebGLSupport/Managed/UnityEngine.XRModule.dll"
+-r:"Library/Bee/artifacts/2000b0aPDevDbg.dag/Cinemachine.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aPDevDbg.dag/Unity.2D.Animation.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aPDevDbg.dag/Unity.2D.Animation.Triangle.Runtime.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aPDevDbg.dag/Unity.2D.Common.Runtime.ref.dll"
@@ -280,6 +282,7 @@
 -r:"Library/Bee/artifacts/2000b0aPDevDbg.dag/Unity.VisualScripting.Flow.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aPDevDbg.dag/Unity.VisualScripting.State.ref.dll"
 -r:"Library/Bee/artifacts/2000b0aPDevDbg.dag/UnityEngine.UI.ref.dll"
+"Assets/Animation.cs"
 "Assets/DialogueEditor/Assets/Scripts/Condition.cs"
 "Assets/DialogueEditor/Assets/Scripts/Connection.cs"
 "Assets/DialogueEditor/Assets/Scripts/Conversation.cs"
@@ -298,11 +301,19 @@
 "Assets/DialogueEditor/Assets/Scripts/UI/UIConversationButton.cs"
 "Assets/DialogueEditor/Example/ExampleInputManager.cs"
 "Assets/GameManager.cs"
-"Assets/InteractionDetector.cs"
-"Assets/Interactions.cs"
-"Assets/InteractTalk.cs"
-"Assets/Movement.cs"
-"Assets/PlayerInput.cs"
+"Assets/InteractDoor.cs"
+"Assets/Narrator.cs"
+"Assets/Progression.cs"
+"Assets/ReavelRoom.cs"
+"Assets/Scripts/InteractionDetectors.cs"
+"Assets/Scripts/Interactions.cs"
+"Assets/Scripts/NPC/InteractDialogue.cs"
+"Assets/Scripts/NPC/InteractUI.cs"
+"Assets/Scripts/NPC/ShowUI.cs"
+"Assets/Scripts/Player/Movement.cs"
+"Assets/Scripts/Player/PlayerDetector.cs"
+"Assets/Scripts/Player/PlayerInput.cs"
+"Assets/Trigger.cs"
 -langversion:8.0
 
 /deterministic
