@@ -16,7 +16,7 @@ public class PlayerInput : MonoBehaviour {
 
     void Update()
     {
-        if (ConversationManager.Instance.IsConversationActive) {
+        if (ConversationManager.Instance.IsConversationActive || Terminal.instance.isActiveAndEnabled) {
             return;
         }
 

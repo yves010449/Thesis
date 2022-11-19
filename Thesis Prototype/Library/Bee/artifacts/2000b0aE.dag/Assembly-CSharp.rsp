@@ -359,6 +359,8 @@
 "Assets/Scripts/Player/Movement.cs"
 "Assets/Scripts/Player/PlayerDetector.cs"
 "Assets/Scripts/Player/PlayerInput.cs"
+"Assets/ShowImageManager.cs"
+"Assets/Terminal.cs"
 "Assets/Trigger.cs"
 -langversion:8.0
 
