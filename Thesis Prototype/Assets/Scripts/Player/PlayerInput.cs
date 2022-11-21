@@ -16,7 +16,8 @@ public class PlayerInput : MonoBehaviour {
 
     void Update()
     {
-        if (ConversationManager.Instance.IsConversationActive || Terminal.instance.isActiveAndEnabled) {
+        if (ConversationManager.Instance.IsConversationActive || GameManager.instance.terminal.activeInHierarchy) {
+            OnMovement?.Invoke(new Vector2(0,0));
             return;
         }
 

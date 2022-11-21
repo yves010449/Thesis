@@ -8,9 +8,9 @@ public class PlayerDetector : InteractionDetectors
         
     }
 
-    public void Interact() {
+    public void Interact() { 
         if (colliders.Length > 0) {
-            colliders[0].GetComponentInParent<Interactions>().Interact();
+            colliders[0].GetComponent<Interactions>().Interact();
         }
     }
 }
