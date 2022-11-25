@@ -84,6 +84,8 @@ SpriteAtlas:
   - {fileID: 7099464769544844513, guid: 61e1400517e2c0d4191cac9fd774a695, type: 3}
   - {fileID: -6298471157973110046, guid: 61e1400517e2c0d4191cac9fd774a695, type: 3}
   - {fileID: 1584029563475729113, guid: 61e1400517e2c0d4191cac9fd774a695, type: 3}
+  - {fileID: -2490322246851266288, guid: 61e1400517e2c0d4191cac9fd774a695, type: 3}
+  - {fileID: -8036089067727510946, guid: 61e1400517e2c0d4191cac9fd774a695, type: 3}
   - {fileID: -4758721063294455966, guid: c288ad18fbf7bf54892d49a97adce0a5, type: 3}
   - {fileID: -1703068498387072479, guid: c288ad18fbf7bf54892d49a97adce0a5, type: 3}
   - {fileID: -9213492281451189013, guid: c288ad18fbf7bf54892d49a97adce0a5, type: 3}
@@ -209,6 +211,8 @@ SpriteAtlas:
   - CosmicLilac_AnimatedSpriteSheet_60
   - CosmicLilac_AnimatedSpriteSheet_38
   - CosmicLilac_AnimatedSpriteSheet_39
+  - CosmicLilac_AnimatedSpriteSheet_1
+  - CosmicLilac_AnimatedSpriteSheet_0
   - CosmicLilac_Tiles_70
   - CosmicLilac_Tiles_71
   - CosmicLilac_Tiles_72

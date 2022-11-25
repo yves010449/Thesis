@@ -7,6 +7,12 @@ public class ShowImageManager : MonoBehaviour
     [SerializeField]
     List<GameObject> screens = new List<GameObject>();
 
+    public void OnEnable() {
+        //DisableAll();
+        //screens[0].SetActive(true);
+    }
+
+
     public void DisplayImage(GameObject obj) {
         DisableAll();
         obj.SetActive(true);

@@ -9,6 +9,7 @@ namespace DialogueEditor
         public KeyCode m_UpKey;
         public KeyCode m_DownKey;
         public KeyCode m_SelectKey;
+        public KeyCode m_EscapeKey;
 
         private void Update()
         {
@@ -28,6 +29,8 @@ namespace DialogueEditor
                     ConversationManager.Instance.SelectNextOption();
                 else if (Input.GetKeyDown(m_SelectKey))
                     ConversationManager.Instance.PressSelectedOption();
+                //else if (Input.GetKeyDown(m_EscapeKey))
+                    //ConversationManager.Instance.;
             }
         }
     }

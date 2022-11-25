@@ -10,13 +10,13 @@ public class PlayerInput : MonoBehaviour {
     public UnityEvent<Vector2> OnMovement;
     public UnityEvent OnInteract;
     Vector2 input;
-    
+    bool isDead;
 
-   
+    public bool IsDead { get => isDead; set => isDead = value; }
 
     void Update()
     {
-        if (ConversationManager.Instance.IsConversationActive || GameManager.instance.terminal.activeInHierarchy) {
+        if (ConversationManager.Instance.IsConversationActive || GameManager.instance.terminal.activeInHierarchy || isDead) {
             OnMovement?.Invoke(new Vector2(0,0));
             return;
         }

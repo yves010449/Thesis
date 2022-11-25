@@ -1,15 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using DialogueEditor;
 using UnityEngine.Events;
 
-public class Trigger : MonoBehaviour {
-
+public class Trigger : MonoBehaviour
+{
     public UnityEvent OnTrigger;
+    public UnityEvent OffTrigger;
 
-    private void OnCollisionEnter2D(Collision2D collision) {
+    private void OnTriggerEnter2D(Collider2D collision) {
         OnTrigger?.Invoke();
-        gameObject.SetActive(false);
     }
+
+    private void OnTriggerExit2D(Collider2D collision) {
+        OffTrigger?.Invoke();
+    }
+
+
 }

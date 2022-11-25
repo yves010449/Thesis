@@ -8,6 +8,7 @@ public class Animation : MonoBehaviour
     SpriteRenderer rd;
 
     Vector2 input;
+    bool isDead;
 
     public Vector2 Input { get => input; set => input = value; }
 
@@ -19,6 +20,7 @@ public class Animation : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+
         if (ConversationManager.Instance.IsConversationActive) {
             animator.SetBool("isMoving", false);
             return;
@@ -44,5 +46,9 @@ public class Animation : MonoBehaviour
         if (input.x > 0) {
             rd.flipX = false;
         }
+    }
+
+    public void IsDead() {
+        animator.SetTrigger("isDead");
     }
 }
