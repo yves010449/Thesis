@@ -7,9 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    public GameObject terminal;
-
-    public int ProgressionIndex;
+    public Vector2 SpawnPos;
 
     private void Awake() {
         instance = this;

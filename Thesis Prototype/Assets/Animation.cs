@@ -51,4 +51,7 @@ public class Animation : MonoBehaviour
     public void IsDead() {
         animator.SetTrigger("isDead");
     }
+    public void Respawn() {
+        animator.SetTrigger("respawn");
+    }
 }

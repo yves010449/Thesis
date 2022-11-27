@@ -13,7 +13,7 @@ public class InteractManager : Interactions {
     }
 
     private void OnMouseDown() {
-        if (onRange && !ConversationManager.Instance.IsConversationActive && !GameManager.instance.terminal.activeInHierarchy) {
+        if (onRange && !ConversationManager.Instance.IsConversationActive && PlayerInput.instance.CanMove) {
             Interact();
         }
     }

@@ -10,6 +10,7 @@ public class PlayerDetector : InteractionDetectors
 
     public void Interact() { 
         if (colliders.Length > 0) {
+            //add tryget component
             colliders[0].GetComponent<Interactions>().Interact();
         }
     }

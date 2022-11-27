@@ -6,17 +6,21 @@ using DialogueEditor;
 
 public class PlayerInput : MonoBehaviour {
 
-
+    public static PlayerInput instance;
     public UnityEvent<Vector2> OnMovement;
     public UnityEvent OnInteract;
     Vector2 input;
-    bool isDead;
+    bool canMove = true;
 
-    public bool IsDead { get => isDead; set => isDead = value; }
+    public bool CanMove { get => canMove; set => canMove = value; }
+
+    private void Awake() {
+        instance = this;
+    }
 
     void Update()
     {
-        if (ConversationManager.Instance.IsConversationActive || GameManager.instance.terminal.activeInHierarchy || isDead) {
+        if (ConversationManager.Instance.IsConversationActive || !CanMove) {
             OnMovement?.Invoke(new Vector2(0,0));
             return;
         }
