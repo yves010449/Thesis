@@ -9,6 +9,13 @@ public class DoorController : MonoBehaviour
 
     public bool isUnlocked;
 
+    public void Unlock() {
+        isUnlocked = true;
+    }
+    public void Lock() {
+        isUnlocked = false;
+    }
+
     public void Open() {
         animator.SetBool("isUnlocked", isUnlocked);
         if(animator.GetBool("isUnlocked"))
