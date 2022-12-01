@@ -10,15 +10,15 @@ public class RobotController : MonoBehaviour
     ChangeScreen changeScreen;
 
     public void Idle() {
-        animator.SetTrigger("Idle");
+        animator.SetBool("isTalking",true);
         changeScreen.SetDefaultParent();
     }
-    public void Blank(Transform obj) {
-        animator.SetTrigger("Blank");
+    public void BlankQuestion(Transform obj) {
         changeScreen.SetScreenParent(obj);
+        animator.SetBool("isTalking", false);
     }
     public void BlankDebug() {
-        animator.SetTrigger("Blank");
+        animator.SetBool("isTalking", false);
         changeScreen.SetDefaultParent();
     }
 }

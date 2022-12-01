@@ -8,6 +8,8 @@ public class OxygenManager : MonoBehaviour {
 
     [SerializeField]
     Slider slider;
+    [SerializeField]
+    Image img;
 
     public UnityEvent OnDeath;
 
@@ -17,8 +19,12 @@ public class OxygenManager : MonoBehaviour {
 
     // Start is called before the first frame update
     private void Start() {
-        StartCoroutine("DepleteOxygen");     
+        StartCorotine();
     }
+    public void StartCorotine() {
+        StartCoroutine("DepleteOxygen");
+    }
+
     public void StartDepleteOxygen() {
         isDepleting = true;
         slider.gameObject.SetActive(true);
@@ -47,7 +53,15 @@ public class OxygenManager : MonoBehaviour {
                 OnDeath?.Invoke();
                 break;
             }
-            yield return new WaitForSeconds(1f);
+            if(slider.value <= slider.maxValue * 0.35f) {
+                img.transform.gameObject.SetActive(true);
+                yield return new WaitForSeconds(2f);
+            }
+            else {
+                img.transform.gameObject.SetActive(false);
+                yield return new WaitForSeconds(1f);
+            }
+                
         }
 
     }

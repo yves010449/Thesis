@@ -286,6 +286,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Animator_SetFloatString();
 		Register_UnityEngine_Animator_SetFloatString();
 
+		//System.Void UnityEngine.Animator::SetTriggerID(System.Int32)
+		void Register_UnityEngine_Animator_SetTriggerID();
+		Register_UnityEngine_Animator_SetTriggerID();
+
 		//System.Void UnityEngine.Animator::SetTriggerString(System.String)
 		void Register_UnityEngine_Animator_SetTriggerString();
 		Register_UnityEngine_Animator_SetTriggerString();
@@ -2425,10 +2429,6 @@ void RegisterAllStrippedInternalCalls()
 	//End Registrations for type : UnityEngine.Quaternion
 
 	//Start Registrations for type : UnityEngine.Random
-
-		//System.Int32 UnityEngine.Random::RandomRangeInt(System.Int32,System.Int32)
-		void Register_UnityEngine_Random_RandomRangeInt();
-		Register_UnityEngine_Random_RandomRangeInt();
 
 		//System.Single UnityEngine.Random::Range(System.Single,System.Single)
 		void Register_UnityEngine_Random_Range();

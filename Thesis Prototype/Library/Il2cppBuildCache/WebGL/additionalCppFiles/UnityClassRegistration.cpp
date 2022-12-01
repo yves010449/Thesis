@@ -36,6 +36,9 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_RuntimeInitializeOnLoadManagerInitializer();
 	RegisterModule_RuntimeInitializeOnLoadManagerInitializer();
 
+	void RegisterModule_SpriteMask();
+	RegisterModule_SpriteMask();
+
 	void RegisterModule_TextRendering();
 	RegisterModule_TextRendering();
 
@@ -176,7 +179,7 @@ class LineRenderer;
 class MeshRenderer; template <> void RegisterUnityClass<MeshRenderer>(const char*);
 class ParticleSystemRenderer; 
 class SkinnedMeshRenderer; 
-class SpriteMask; 
+class SpriteMask; template <> void RegisterUnityClass<SpriteMask>(const char*);
 class SpriteRenderer; template <> void RegisterUnityClass<SpriteRenderer>(const char*);
 class SpriteShapeRenderer; 
 class TilemapRenderer; template <> void RegisterUnityClass<TilemapRenderer>(const char*);
@@ -281,7 +284,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 89 non stripped classes
+	//Total: 90 non stripped classes
 	//0. Animation
 	RegisterUnityClass<Animation>("Animation");
 	//1. AnimationClip
@@ -446,19 +449,21 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<PolygonCollider2D>("Physics2D");
 	//81. Rigidbody2D
 	RegisterUnityClass<Rigidbody2D>("Physics2D");
-	//82. TextRendering::Font
+	//82. SpriteMask
+	RegisterUnityClass<SpriteMask>("SpriteMask");
+	//83. TextRendering::Font
 	RegisterUnityClass<TextRendering::Font>("TextRendering");
-	//83. Tilemap
+	//84. Tilemap
 	RegisterUnityClass<Tilemap>("Tilemap");
-	//84. TilemapCollider2D
+	//85. TilemapCollider2D
 	RegisterUnityClass<TilemapCollider2D>("Tilemap");
-	//85. TilemapRenderer
+	//86. TilemapRenderer
 	RegisterUnityClass<TilemapRenderer>("Tilemap");
-	//86. UI::Canvas
+	//87. UI::Canvas
 	RegisterUnityClass<UI::Canvas>("UI");
-	//87. UI::CanvasGroup
+	//88. UI::CanvasGroup
 	RegisterUnityClass<UI::CanvasGroup>("UI");
-	//88. UI::CanvasRenderer
+	//89. UI::CanvasRenderer
 	RegisterUnityClass<UI::CanvasRenderer>("UI");
 
 }

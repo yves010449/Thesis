@@ -4,16 +4,36 @@ using UnityEngine;
 using DialogueEditor;
 public class QuestionManager : MonoBehaviour
 {
-    public NPCConversation[] Conversation;
+    public int CurrentIndex = 0;
 
-    public void StartRandomQuestion() {
-        ConversationManager.Instance.EndConversation();
-        ConversationManager.Instance.StartConversation(Conversation[Random.Range(0,Conversation.Length)]);
-        Debug.Log(Random.Range(0, Conversation.Length));
-    }
+    public List<NPCConversation> Conversation = new List<NPCConversation>();
+
+    [SerializeField]
+    NPCConversation noConvo;
 
     public void StartQuestion(NPCConversation conversation) {
         ConversationManager.Instance.EndConversation();
         ConversationManager.Instance.StartConversation(conversation);
+    }
+
+    public void StartRandomQuestion() {
+        if (Conversation.Count != 0) {
+            ConversationManager.Instance.StartConversation(Conversation[CurrentIndex]);
+            CurrentIndex++;
+            if(CurrentIndex == Conversation.Count) {
+                CurrentIndex = 0;
+            }
+        }
+        else {
+            ConversationManager.Instance.StartConversation(noConvo);
+            gameObject.SetActive(false);
+        }
+        
+    }
+
+    public void AddQuestions(QuestionHolder questions) {
+        for(int i = 0; i < questions.Conversation.Count; i++) {
+            Conversation.Add(questions.Conversation[i]);
+        }
     }
 }

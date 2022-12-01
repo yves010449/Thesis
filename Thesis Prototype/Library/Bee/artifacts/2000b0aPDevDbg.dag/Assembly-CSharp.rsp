@@ -284,6 +284,7 @@
 -r:"Library/Bee/artifacts/2000b0aPDevDbg.dag/UnityEngine.UI.ref.dll"
 "Assets/Animation.cs"
 "Assets/Checkpoint.cs"
+"Assets/CutoutMaskUI.cs"
 "Assets/DialogueEditor/Assets/Scripts/Condition.cs"
 "Assets/DialogueEditor/Assets/Scripts/Connection.cs"
 "Assets/DialogueEditor/Assets/Scripts/Conversation.cs"
@@ -308,11 +309,14 @@
 "Assets/InteractDoor.cs"
 "Assets/InteractManager.cs"
 "Assets/OnDisableUtil.cs"
+"Assets/OnStartUtil.cs"
 "Assets/OxygenManager.cs"
 "Assets/Progression.cs"
+"Assets/QuestionHolder.cs"
 "Assets/QuestionManager.cs"
 "Assets/ReavelRoom.cs"
 "Assets/Respawn.cs"
+"Assets/RobotController.cs"
 "Assets/ScreenEnable.cs"
 "Assets/ScreenManager.cs"
 "Assets/Scripts/ChangeScreen.cs"
@@ -328,6 +332,7 @@
 "Assets/Terminal.cs"
 "Assets/TimerUtil.cs"
 "Assets/Trigger.cs"
+"Assets/Tutorial.cs"
 -langversion:8.0
 
 /deterministic

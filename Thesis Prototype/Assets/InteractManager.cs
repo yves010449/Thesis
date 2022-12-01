@@ -4,12 +4,15 @@ using UnityEngine;
 using UnityEngine.Events;
 using DialogueEditor;
 public class InteractManager : Interactions {
-    public UnityEvent OnInteract;
 
+
+    public UnityEvent OnInteract;
+    
     bool onRange;
 
+
     public override void Interact() {
-        OnInteract?.Invoke();
+            OnInteract?.Invoke();
     }
 
     private void OnMouseDown() {
