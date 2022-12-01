@@ -37,6 +37,10 @@ public class OxygenManager : MonoBehaviour {
     public void AddOxygen(int amount) {
         slider.value += amount;
     }
+    public void AddOxygen() {
+        slider.value += 5;
+    }
+
     public void ReduceOxygen(int amount) {
         slider.value -= amount;
     }

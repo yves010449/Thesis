@@ -248,6 +248,7 @@ GameObject:
   - component: {fileID: 9066003327084688582}
   - component: {fileID: 5029614958759838042}
   - component: {fileID: 5029614958759838040}
+  - component: {fileID: 3728939050233209858}
   m_Layer: 6
   m_Name: 'Learning Terminal '
   m_TagString: Untagged
@@ -351,7 +352,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1616189228333425448, guid: 59a0b25ee9ab2ee418d67d316b22546b, type: 3}
+  m_Sprite: {fileID: -2558047959036732663, guid: 43906e50d4318f742beb464b54fb6f6f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -379,7 +380,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.5, y: 1.75}
+    oldSize: {x: 1.375, y: 1.8125}
     newSize: {x: 1.5, y: 1.75}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -405,7 +406,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.5, y: 1.75}
+    oldSize: {x: 1.375, y: 1.8125}
     newSize: {x: 1.5, y: 1.75}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -414,6 +415,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 1.75}
   m_EdgeRadius: 0
+--- !u!95 &3728939050233209858
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5029614958759838053}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 82486d677b317b14a8c49889980a7261, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &5029614959156166068
 GameObject:
   m_ObjectHideFlags: 0

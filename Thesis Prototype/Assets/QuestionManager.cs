@@ -11,6 +11,10 @@ public class QuestionManager : MonoBehaviour
     [SerializeField]
     NPCConversation noConvo;
 
+    private void Start() {
+        StartCoroutine(checkDialogue());
+    }
+
     public void StartQuestion(NPCConversation conversation) {
         ConversationManager.Instance.EndConversation();
         ConversationManager.Instance.StartConversation(conversation);
@@ -35,5 +39,11 @@ public class QuestionManager : MonoBehaviour
         for(int i = 0; i < questions.Conversation.Count; i++) {
             Conversation.Add(questions.Conversation[i]);
         }
+    }
+    IEnumerator checkDialogue() {
+        if (!ConversationManager.Instance.IsConversationActive) {
+            gameObject.SetActive(false);
+        }
+        yield return new WaitForSeconds(2f);
     }
 }

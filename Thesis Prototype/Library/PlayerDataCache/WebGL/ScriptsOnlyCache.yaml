@@ -1,5 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp-Editor.dll:
+    - DialogueEditor.DialogueEditorWindow
     Assembly-CSharp.dll:
     - Animation
     - ChangeScreen
@@ -11,7 +13,6 @@ ScriptsOnlyBuild:
     - DialogueEditor.NPCConversation
     - DialogueEditor.NodeEventHolder
     - DialogueEditor.UIConversationButton
-    - DialogueManager
     - DisableChildUtil
     - DoorController
     - GameManager
@@ -45,7 +46,6 @@ ScriptsOnlyBuild:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridBrush
-    - UnityEditor.Tilemaps.GridBrushEditor
     - UnityEditor.Tilemaps.GridPaintPaletteClipboard
     - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
@@ -150,8 +150,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 1910}
     - Class: 114
       Script: {instanceID: 2028}
-    - Class: 114
-      Script: {instanceID: 2132}
     - Class: 114
       Script: {instanceID: 2390}
     - Class: 114
