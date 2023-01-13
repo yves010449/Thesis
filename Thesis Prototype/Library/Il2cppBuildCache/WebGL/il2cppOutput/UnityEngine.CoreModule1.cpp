@@ -16775,12 +16775,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Vector3_op_Equality_m8A98C7F38641110A2F9
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Vector3_ToString_mD5085501F9A0483542E9F7B18CD09C0AB977E318 (Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E * __this, const RuntimeMethod* method);
 // System.Int32 UnityEngine.Vector3Int::get_x()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Vector3Int_get_x_m5B1B86414F43D7CE0C83932F0094B1A94A9B4594 (Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA * __this, const RuntimeMethod* method);
-// System.Void UnityEngine.Vector3Int::set_x(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Vector3Int_set_x_m9C1C34588D4C8256BBA51A561D9638F3BDF6162C (Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA * __this, int32_t ___value0, const RuntimeMethod* method);
 // System.Int32 UnityEngine.Vector3Int::get_y()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Vector3Int_get_y_m62E0B990FBFDA9D416B82000A73B5B4F71CF0FA3 (Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA * __this, const RuntimeMethod* method);
-// System.Void UnityEngine.Vector3Int::set_y(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Vector3Int_set_y_m313A1298D787BC81171146C71FC882F6AEA9E111 (Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA * __this, int32_t ___value0, const RuntimeMethod* method);
 // System.Int32 UnityEngine.Vector3Int::get_z()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Vector3Int_get_z_m14EC2E331A510D161E5A7A587837BBD2A3D225B6 (Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA * __this, const RuntimeMethod* method);
 // System.Void UnityEngine.Vector3Int::.ctor(System.Int32,System.Int32,System.Int32)
@@ -39309,22 +39305,6 @@ IL2CPP_EXTERN_C  int32_t Vector3Int_get_x_m5B1B86414F43D7CE0C83932F0094B1A94A9B4
 	_returnValue = Vector3Int_get_x_m5B1B86414F43D7CE0C83932F0094B1A94A9B4594(_thisAdjusted, method);
 	return _returnValue;
 }
-// System.Void UnityEngine.Vector3Int::set_x(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Vector3Int_set_x_m9C1C34588D4C8256BBA51A561D9638F3BDF6162C (Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA * __this, int32_t ___value0, const RuntimeMethod* method)
-{
-	{
-		int32_t L_0 = ___value0;
-		__this->set_m_X_0(L_0);
-		return;
-	}
-}
-IL2CPP_EXTERN_C  void Vector3Int_set_x_m9C1C34588D4C8256BBA51A561D9638F3BDF6162C_AdjustorThunk (RuntimeObject * __this, int32_t ___value0, const RuntimeMethod* method)
-{
-	Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA * _thisAdjusted;
-	int32_t _offset = 1;
-	_thisAdjusted = reinterpret_cast<Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA *>(__this + _offset);
-	Vector3Int_set_x_m9C1C34588D4C8256BBA51A561D9638F3BDF6162C(_thisAdjusted, ___value0, method);
-}
 // System.Int32 UnityEngine.Vector3Int::get_y()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Vector3Int_get_y_m62E0B990FBFDA9D416B82000A73B5B4F71CF0FA3 (Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA * __this, const RuntimeMethod* method)
 {
@@ -39349,22 +39329,6 @@ IL2CPP_EXTERN_C  int32_t Vector3Int_get_y_m62E0B990FBFDA9D416B82000A73B5B4F71CF0
 	int32_t _returnValue;
 	_returnValue = Vector3Int_get_y_m62E0B990FBFDA9D416B82000A73B5B4F71CF0FA3(_thisAdjusted, method);
 	return _returnValue;
-}
-// System.Void UnityEngine.Vector3Int::set_y(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Vector3Int_set_y_m313A1298D787BC81171146C71FC882F6AEA9E111 (Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA * __this, int32_t ___value0, const RuntimeMethod* method)
-{
-	{
-		int32_t L_0 = ___value0;
-		__this->set_m_Y_1(L_0);
-		return;
-	}
-}
-IL2CPP_EXTERN_C  void Vector3Int_set_y_m313A1298D787BC81171146C71FC882F6AEA9E111_AdjustorThunk (RuntimeObject * __this, int32_t ___value0, const RuntimeMethod* method)
-{
-	Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA * _thisAdjusted;
-	int32_t _offset = 1;
-	_thisAdjusted = reinterpret_cast<Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA *>(__this + _offset);
-	Vector3Int_set_y_m313A1298D787BC81171146C71FC882F6AEA9E111(_thisAdjusted, ___value0, method);
 }
 // System.Int32 UnityEngine.Vector3Int::get_z()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t Vector3Int_get_z_m14EC2E331A510D161E5A7A587837BBD2A3D225B6 (Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA * __this, const RuntimeMethod* method)
@@ -39410,93 +39374,6 @@ IL2CPP_EXTERN_C  void Vector3Int__ctor_m3785ECE3685842F2B477CBE64334D6969EB503DF
 	int32_t _offset = 1;
 	_thisAdjusted = reinterpret_cast<Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA *>(__this + _offset);
 	Vector3Int__ctor_m3785ECE3685842F2B477CBE64334D6969EB503DF_inline(_thisAdjusted, ___x0, ___y1, ___z2, method);
-}
-// UnityEngine.Vector3 UnityEngine.Vector3Int::op_Implicit(UnityEngine.Vector3Int)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  Vector3Int_op_Implicit_mD812DEDBDE886508E86FB3222BB9DDB4949B4475 (Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  ___v0, const RuntimeMethod* method)
-{
-	Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	{
-		int32_t L_0;
-		L_0 = Vector3Int_get_x_m5B1B86414F43D7CE0C83932F0094B1A94A9B4594((Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA *)(&___v0), /*hidden argument*/NULL);
-		int32_t L_1;
-		L_1 = Vector3Int_get_y_m62E0B990FBFDA9D416B82000A73B5B4F71CF0FA3((Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA *)(&___v0), /*hidden argument*/NULL);
-		int32_t L_2;
-		L_2 = Vector3Int_get_z_m14EC2E331A510D161E5A7A587837BBD2A3D225B6((Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA *)(&___v0), /*hidden argument*/NULL);
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_3;
-		memset((&L_3), 0, sizeof(L_3));
-		Vector3__ctor_m57495F692C6CE1CEF278CAD9A98221165D37E636_inline((&L_3), ((float)((float)L_0)), ((float)((float)L_1)), ((float)((float)L_2)), /*hidden argument*/NULL);
-		V_0 = L_3;
-		goto IL_0021;
-	}
-
-IL_0021:
-	{
-		Vector3_t65B972D6A585A0A5B63153CF1177A90D3C90D65E  L_4 = V_0;
-		return L_4;
-	}
-}
-// UnityEngine.Vector3Int UnityEngine.Vector3Int::op_Addition(UnityEngine.Vector3Int,UnityEngine.Vector3Int)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  Vector3Int_op_Addition_m8BC205CBD8491E7F5F4B13501C81714FF0959308 (Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  ___a0, Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  ___b1, const RuntimeMethod* method)
-{
-	Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	{
-		int32_t L_0;
-		L_0 = Vector3Int_get_x_m5B1B86414F43D7CE0C83932F0094B1A94A9B4594((Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA *)(&___a0), /*hidden argument*/NULL);
-		int32_t L_1;
-		L_1 = Vector3Int_get_x_m5B1B86414F43D7CE0C83932F0094B1A94A9B4594((Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA *)(&___b1), /*hidden argument*/NULL);
-		int32_t L_2;
-		L_2 = Vector3Int_get_y_m62E0B990FBFDA9D416B82000A73B5B4F71CF0FA3((Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA *)(&___a0), /*hidden argument*/NULL);
-		int32_t L_3;
-		L_3 = Vector3Int_get_y_m62E0B990FBFDA9D416B82000A73B5B4F71CF0FA3((Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA *)(&___b1), /*hidden argument*/NULL);
-		int32_t L_4;
-		L_4 = Vector3Int_get_z_m14EC2E331A510D161E5A7A587837BBD2A3D225B6((Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA *)(&___a0), /*hidden argument*/NULL);
-		int32_t L_5;
-		L_5 = Vector3Int_get_z_m14EC2E331A510D161E5A7A587837BBD2A3D225B6((Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA *)(&___b1), /*hidden argument*/NULL);
-		Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  L_6;
-		memset((&L_6), 0, sizeof(L_6));
-		Vector3Int__ctor_m3785ECE3685842F2B477CBE64334D6969EB503DF_inline((&L_6), ((int32_t)il2cpp_codegen_add((int32_t)L_0, (int32_t)L_1)), ((int32_t)il2cpp_codegen_add((int32_t)L_2, (int32_t)L_3)), ((int32_t)il2cpp_codegen_add((int32_t)L_4, (int32_t)L_5)), /*hidden argument*/NULL);
-		V_0 = L_6;
-		goto IL_0036;
-	}
-
-IL_0036:
-	{
-		Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  L_7 = V_0;
-		return L_7;
-	}
-}
-// UnityEngine.Vector3Int UnityEngine.Vector3Int::op_Subtraction(UnityEngine.Vector3Int,UnityEngine.Vector3Int)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  Vector3Int_op_Subtraction_mBC060BA7728D6DB47CC12E778D77CFFF3E582BC0 (Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  ___a0, Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  ___b1, const RuntimeMethod* method)
-{
-	Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	{
-		int32_t L_0;
-		L_0 = Vector3Int_get_x_m5B1B86414F43D7CE0C83932F0094B1A94A9B4594((Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA *)(&___a0), /*hidden argument*/NULL);
-		int32_t L_1;
-		L_1 = Vector3Int_get_x_m5B1B86414F43D7CE0C83932F0094B1A94A9B4594((Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA *)(&___b1), /*hidden argument*/NULL);
-		int32_t L_2;
-		L_2 = Vector3Int_get_y_m62E0B990FBFDA9D416B82000A73B5B4F71CF0FA3((Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA *)(&___a0), /*hidden argument*/NULL);
-		int32_t L_3;
-		L_3 = Vector3Int_get_y_m62E0B990FBFDA9D416B82000A73B5B4F71CF0FA3((Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA *)(&___b1), /*hidden argument*/NULL);
-		int32_t L_4;
-		L_4 = Vector3Int_get_z_m14EC2E331A510D161E5A7A587837BBD2A3D225B6((Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA *)(&___a0), /*hidden argument*/NULL);
-		int32_t L_5;
-		L_5 = Vector3Int_get_z_m14EC2E331A510D161E5A7A587837BBD2A3D225B6((Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA *)(&___b1), /*hidden argument*/NULL);
-		Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  L_6;
-		memset((&L_6), 0, sizeof(L_6));
-		Vector3Int__ctor_m3785ECE3685842F2B477CBE64334D6969EB503DF_inline((&L_6), ((int32_t)il2cpp_codegen_subtract((int32_t)L_0, (int32_t)L_1)), ((int32_t)il2cpp_codegen_subtract((int32_t)L_2, (int32_t)L_3)), ((int32_t)il2cpp_codegen_subtract((int32_t)L_4, (int32_t)L_5)), /*hidden argument*/NULL);
-		V_0 = L_6;
-		goto IL_0036;
-	}
-
-IL_0036:
-	{
-		Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  L_7 = V_0;
-		return L_7;
-	}
 }
 // System.Boolean UnityEngine.Vector3Int::op_Equality(UnityEngine.Vector3Int,UnityEngine.Vector3Int)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Vector3Int_op_Equality_m724847B7E7A484A1E6F598CEC2D77CDE8ECE49E7 (Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  ___lhs0, Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  ___rhs1, const RuntimeMethod* method)
@@ -39785,52 +39662,6 @@ IL2CPP_EXTERN_C  String_t* Vector3Int_ToString_m8C32AEB68C6D46DA1F25463780676870
 	String_t* _returnValue;
 	_returnValue = Vector3Int_ToString_m8C32AEB68C6D46DA1F2546378067687007FCF6A5(_thisAdjusted, ___format0, ___formatProvider1, method);
 	return _returnValue;
-}
-// UnityEngine.Vector3Int UnityEngine.Vector3Int::get_zero()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  Vector3Int_get_zero_m9B7E460F38F93CC56871571709EA8EFC58DD3B58 (const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	{
-		Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  L_0 = ((Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA_StaticFields*)il2cpp_codegen_static_fields_for(Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA_il2cpp_TypeInfo_var))->get_s_Zero_3();
-		V_0 = L_0;
-		goto IL_0009;
-	}
-
-IL_0009:
-	{
-		Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  L_1 = V_0;
-		return L_1;
-	}
-}
-// UnityEngine.Vector3Int UnityEngine.Vector3Int::get_one()
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  Vector3Int_get_one_mD2F5EA183E7F7D84A6DE6D3FC8D5EC0A17D29FCA (const RuntimeMethod* method)
-{
-	static bool s_Il2CppMethodInitialized;
-	if (!s_Il2CppMethodInitialized)
-	{
-		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA_il2cpp_TypeInfo_var);
-		s_Il2CppMethodInitialized = true;
-	}
-	Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  V_0;
-	memset((&V_0), 0, sizeof(V_0));
-	{
-		Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  L_0 = ((Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA_StaticFields*)il2cpp_codegen_static_fields_for(Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA_il2cpp_TypeInfo_var))->get_s_One_4();
-		V_0 = L_0;
-		goto IL_0009;
-	}
-
-IL_0009:
-	{
-		Vector3Int_t197C3BA05CF19F1A22D40F8AE64CD4102AFB77EA  L_1 = V_0;
-		return L_1;
-	}
 }
 // System.Void UnityEngine.Vector3Int::.cctor()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Vector3Int__cctor_m2EC94FD622152EE49C25C960DE1DEB83A3212283 (const RuntimeMethod* method)

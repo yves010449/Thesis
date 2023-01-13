@@ -1264,14 +1264,6 @@ void RegisterAllStrippedInternalCalls()
 
 	//End Registrations for type : UnityEngine.Graphics
 
-	//Start Registrations for type : UnityEngine.GridLayout
-
-		//System.Void UnityEngine.GridLayout::CellToLocalInterpolated_Injected(UnityEngine.Vector3&,UnityEngine.Vector3&)
-		void Register_UnityEngine_GridLayout_CellToLocalInterpolated_Injected();
-		Register_UnityEngine_GridLayout_CellToLocalInterpolated_Injected();
-
-	//End Registrations for type : UnityEngine.GridLayout
-
 	//Start Registrations for type : UnityEngine.GUI
 
 		//System.Boolean UnityEngine.GUI::get_changed()
@@ -1627,18 +1619,6 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_Input_get_imeCompositionMode();
 
 	//End Registrations for type : UnityEngine.Input
-
-	//Start Registrations for type : UnityEngine.JsonUtility
-
-		//System.Object UnityEngine.JsonUtility::FromJsonInternal(System.String,System.Object,System.Type)
-		void Register_UnityEngine_JsonUtility_FromJsonInternal();
-		Register_UnityEngine_JsonUtility_FromJsonInternal();
-
-		//System.String UnityEngine.JsonUtility::ToJsonInternal(System.Object,System.Boolean)
-		void Register_UnityEngine_JsonUtility_ToJsonInternal();
-		Register_UnityEngine_JsonUtility_ToJsonInternal();
-
-	//End Registrations for type : UnityEngine.JsonUtility
 
 	//Start Registrations for type : UnityEngine.Light
 
@@ -3058,33 +3038,9 @@ void RegisterAllStrippedInternalCalls()
 
 	//Start Registrations for type : UnityEngine.Tilemaps.Tilemap
 
-		//System.Int32 UnityEngine.Tilemaps.Tilemap::GetUsedTilesCount()
-		void Register_UnityEngine_Tilemaps_Tilemap_GetUsedTilesCount();
-		Register_UnityEngine_Tilemaps_Tilemap_GetUsedTilesCount();
-
-		//System.Int32 UnityEngine.Tilemaps.Tilemap::Internal_GetUsedTilesNonAlloc(UnityEngine.Object[])
-		void Register_UnityEngine_Tilemaps_Tilemap_Internal_GetUsedTilesNonAlloc();
-		Register_UnityEngine_Tilemaps_Tilemap_Internal_GetUsedTilesNonAlloc();
-
-		//System.Single UnityEngine.Tilemaps.Tilemap::get_animationFrameRate()
-		void Register_UnityEngine_Tilemaps_Tilemap_get_animationFrameRate();
-		Register_UnityEngine_Tilemaps_Tilemap_get_animationFrameRate();
-
 		//System.Void UnityEngine.Tilemaps.Tilemap::RefreshTile_Injected(UnityEngine.Vector3Int&)
 		void Register_UnityEngine_Tilemaps_Tilemap_RefreshTile_Injected();
 		Register_UnityEngine_Tilemaps_Tilemap_RefreshTile_Injected();
-
-		//System.Void UnityEngine.Tilemaps.Tilemap::get_orientationMatrix_Injected(UnityEngine.Matrix4x4&)
-		void Register_UnityEngine_Tilemaps_Tilemap_get_orientationMatrix_Injected();
-		Register_UnityEngine_Tilemaps_Tilemap_get_orientationMatrix_Injected();
-
-		//System.Void UnityEngine.Tilemaps.Tilemap::get_tileAnchor_Injected(UnityEngine.Vector3&)
-		void Register_UnityEngine_Tilemaps_Tilemap_get_tileAnchor_Injected();
-		Register_UnityEngine_Tilemaps_Tilemap_get_tileAnchor_Injected();
-
-		//UnityEngine.Object UnityEngine.Tilemaps.Tilemap::GetTileAsset_Injected(UnityEngine.Vector3Int&)
-		void Register_UnityEngine_Tilemaps_Tilemap_GetTileAsset_Injected();
-		Register_UnityEngine_Tilemaps_Tilemap_GetTileAsset_Injected();
 
 	//End Registrations for type : UnityEngine.Tilemaps.Tilemap
 

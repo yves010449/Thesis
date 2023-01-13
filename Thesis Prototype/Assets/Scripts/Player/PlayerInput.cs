@@ -34,6 +34,8 @@ public class PlayerInput : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.E)) {
             OnInteract?.Invoke();
         }
-        
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            GameManager.instance.PauseGame();
+        }
     }
 }
