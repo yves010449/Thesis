@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DialogueEditor;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -17,6 +18,10 @@ public class GameManager : MonoBehaviour
         Application.targetFrameRate = 120;
     }
 
+    private void Start() {
+        Time.timeScale = 1;
+    }
+
     public void PauseGame() {
         Time.timeScale = 0;
         OnPause?.Invoke();
@@ -24,5 +29,15 @@ public class GameManager : MonoBehaviour
     public void ResumeGame() {
         Time.timeScale = 1;
         OnResume?.Invoke();
+    }
+    public void StartGame() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    public void MainMenu() {
+        SceneManager.LoadScene(0);
+    }
+    public void ExitGame() {
+        Debug.Log("Exit");
+        Application.Quit();
     }
 }

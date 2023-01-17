@@ -18119,7 +18119,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MarkerList_CreateMarker_mD867C
 		L_1 = Type_GetTypeFromHandle_m8BB57524FF7F9DB1803BC561D2B3A4DBACEB385E(L_0, /*hidden argument*/NULL);
 		Type_t * L_2 = ___type0;
 		bool L_3;
-		L_3 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(108 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_1, L_2);
+		L_3 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_1, L_2);
 		if (!L_3)
 		{
 			goto IL_0028;
@@ -18132,7 +18132,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* MarkerList_CreateMarker_mD867C
 		L_5 = Type_GetTypeFromHandle_m8BB57524FF7F9DB1803BC561D2B3A4DBACEB385E(L_4, /*hidden argument*/NULL);
 		Type_t * L_6 = ___type0;
 		bool L_7;
-		L_7 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(108 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_5, L_6);
+		L_7 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_5, L_6);
 		G_B3_0 = ((((int32_t)L_7) == ((int32_t)0))? 1 : 0);
 		goto IL_0029;
 	}
@@ -18177,7 +18177,7 @@ IL_0039:
 		L_13 = Type_GetTypeFromHandle_m8BB57524FF7F9DB1803BC561D2B3A4DBACEB385E(L_12, /*hidden argument*/NULL);
 		Type_t * L_14 = ___type0;
 		bool L_15;
-		L_15 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(108 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_13, L_14);
+		L_15 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_13, L_14);
 		G_B8_0 = ((int32_t)(L_15));
 		goto IL_0054;
 	}
@@ -19008,7 +19008,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NotificationUtilities_TrackTypeSupportsN
 		TrackBindingTypeAttribute_t79AF88B1D799883A54208F08FB36D25582E1D780 * L_7 = V_0;
 		Type_t * L_8 = L_7->get_type_0();
 		bool L_9;
-		L_9 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(108 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_6, L_8);
+		L_9 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_6, L_8);
 		if (L_9)
 		{
 			goto IL_0048;
@@ -19022,7 +19022,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool NotificationUtilities_TrackTypeSupportsN
 		TrackBindingTypeAttribute_t79AF88B1D799883A54208F08FB36D25582E1D780 * L_12 = V_0;
 		Type_t * L_13 = L_12->get_type_0();
 		bool L_14;
-		L_14 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(108 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_11, L_13);
+		L_14 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_11, L_13);
 		G_B4_0 = ((int32_t)(L_14));
 		goto IL_0049;
 	}
@@ -23045,7 +23045,7 @@ IL_002a:
 		L_8 = Type_GetTypeFromHandle_m8BB57524FF7F9DB1803BC561D2B3A4DBACEB385E(L_7, /*hidden argument*/NULL);
 		Type_t * L_9 = ___type0;
 		bool L_10;
-		L_10 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(108 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_8, L_9);
+		L_10 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_8, L_9);
 		V_5 = (bool)((((int32_t)L_10) == ((int32_t)0))? 1 : 0);
 		bool L_11 = V_5;
 		if (!L_11)
@@ -23926,7 +23926,7 @@ IL_0028:
 		L_8 = Type_GetTypeFromHandle_m8BB57524FF7F9DB1803BC561D2B3A4DBACEB385E(L_7, /*hidden argument*/NULL);
 		Type_t * L_9 = ___trackType2;
 		bool L_10;
-		L_10 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(108 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_8, L_9);
+		L_10 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_8, L_9);
 		V_2 = (bool)((((int32_t)L_10) == ((int32_t)0))? 1 : 0);
 		bool L_11 = V_2;
 		if (!L_11)
@@ -27283,7 +27283,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TimelineCreateUtilities_ValidateParentTr
 		L_3 = Type_GetTypeFromHandle_m8BB57524FF7F9DB1803BC561D2B3A4DBACEB385E(L_2, /*hidden argument*/NULL);
 		Type_t * L_4 = ___childType1;
 		bool L_5;
-		L_5 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(108 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_3, L_4);
+		L_5 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_3, L_4);
 		G_B3_0 = ((((int32_t)L_5) == ((int32_t)0))? 1 : 0);
 		goto IL_0020;
 	}
@@ -30757,7 +30757,7 @@ IL_0021:
 		TrackClipTypeAttribute_t2802C3E113456E193F0FA077805F87B7F8C99F59 * L_13 = V_5;
 		Type_t * L_14 = L_13->get_inspectedType_0();
 		bool L_15;
-		L_15 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(108 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_12, L_14);
+		L_15 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_12, L_14);
 		if (!L_15)
 		{
 			goto IL_0064;
@@ -30771,7 +30771,7 @@ IL_0021:
 		TrackClipTypeAttribute_t2802C3E113456E193F0FA077805F87B7F8C99F59 * L_18 = V_5;
 		Type_t * L_19 = L_18->get_inspectedType_0();
 		bool L_20;
-		L_20 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(108 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_17, L_19);
+		L_20 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_17, L_19);
 		G_B5_0 = ((int32_t)(L_20));
 		goto IL_0065;
 	}
@@ -34378,7 +34378,7 @@ IL_001c:
 		Type_t * L_9 = L_8->get_inspectedType_0();
 		Type_t * L_10 = ___clipType0;
 		bool L_11;
-		L_11 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(108 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_9, L_10);
+		L_11 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_9, L_10);
 		V_3 = L_11;
 		bool L_12 = V_3;
 		if (!L_12)
@@ -34422,7 +34422,7 @@ IL_0040:
 		Type_t * L_19;
 		L_19 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(__this, /*hidden argument*/NULL);
 		bool L_20;
-		L_20 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(108 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_18, L_19);
+		L_20 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_18, L_19);
 		if (!L_20)
 		{
 			goto IL_0087;
@@ -34435,7 +34435,7 @@ IL_0040:
 		L_22 = Type_GetTypeFromHandle_m8BB57524FF7F9DB1803BC561D2B3A4DBACEB385E(L_21, /*hidden argument*/NULL);
 		Type_t * L_23 = ___clipType0;
 		bool L_24;
-		L_24 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(108 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_22, L_23);
+		L_24 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_22, L_23);
 		if (!L_24)
 		{
 			goto IL_0087;
@@ -34448,7 +34448,7 @@ IL_0040:
 		L_26 = Type_GetTypeFromHandle_m8BB57524FF7F9DB1803BC561D2B3A4DBACEB385E(L_25, /*hidden argument*/NULL);
 		Type_t * L_27 = ___clipType0;
 		bool L_28;
-		L_28 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(108 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_26, L_27);
+		L_28 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_26, L_27);
 		G_B9_0 = ((int32_t)(L_28));
 		goto IL_0088;
 	}
@@ -35029,7 +35029,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool TrackAsset_IsCompilable_m151DA4060B48E12
 		Type_t * L_2;
 		L_2 = Object_GetType_m571FE8360C10B98C23AAF1F066D92C08CC94F45B(__this, /*hidden argument*/NULL);
 		bool L_3;
-		L_3 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(108 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_1, L_2);
+		L_3 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_1, L_2);
 		V_0 = L_3;
 		// if (isContainer)
 		bool L_4 = V_0;
