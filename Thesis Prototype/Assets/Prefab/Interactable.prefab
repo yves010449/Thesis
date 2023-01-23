@@ -44,12 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccfad08a525d1aa418d8437d15162d10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShowGizmo: 1
-  Layer:
-    serializedVersion: 2
-    m_Bits: 1024
-  radius: 0.69
-  colliders: []
   UI: {fileID: 893656016881853752}
 --- !u!58 &893656016757383748
 CircleCollider2D:
@@ -61,12 +55,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.0001
+  m_Radius: 1
 --- !u!1 &893656016881853752
 GameObject:
   m_ObjectHideFlags: 0
@@ -84,7 +78,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &893656016881853759
 RectTransform:
   m_ObjectHideFlags: 0
@@ -254,6 +248,7 @@ GameObject:
   - component: {fileID: 893656018347842028}
   - component: {fileID: 744215275340936557}
   - component: {fileID: 893656018347842030}
+  - component: {fileID: 4227178387785646066}
   m_Layer: 6
   m_Name: Interactable
   m_TagString: Untagged
@@ -344,6 +339,22 @@ MonoBehaviour:
   OnInteract:
     m_PersistentCalls:
       m_Calls: []
+--- !u!58 &4227178387785646066
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893656018347842025}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.5
 --- !u!1 &893656018487534125
 GameObject:
   m_ObjectHideFlags: 0

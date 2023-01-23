@@ -349,6 +349,7 @@
 "Assets/GameManager.cs"
 "Assets/InteractDoor.cs"
 "Assets/InteractManager.cs"
+"Assets/LineOfSight.cs"
 "Assets/MaskObjectUtil.cs"
 "Assets/OnDisableUtil.cs"
 "Assets/OnStartUtil.cs"

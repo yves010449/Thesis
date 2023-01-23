@@ -12,11 +12,12 @@ public class InteractManager : Interactions {
 
 
     public override void Interact() {
+        Debug.Log("Interact");
             OnInteract?.Invoke();
     }
 
     private void OnMouseDown() {
-        if (onRange && !ConversationManager.Instance.IsConversationActive && PlayerInput.instance.CanMove) {
+        if (onRange && !ConversationManager.Instance.IsConversationActive && PlayerInput.instance.CanMove) {      
             Interact();
         }
     }

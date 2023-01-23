@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DialogueEditor;
 
 public class DoorController : MonoBehaviour
 {
     [SerializeField]
     Animator animator;
-
+    [SerializeField]
+    NPCConversation conversation;
     public bool isUnlocked;
 
     public void Unlock() {
@@ -26,5 +28,11 @@ public class DoorController : MonoBehaviour
         animator.SetBool("isUnlocked", isUnlocked);
         if (animator.GetBool("isUnlocked"))
             animator.SetTrigger("Close");
+    }
+
+    public void DoorIsLocked() {
+        if (!isUnlocked) {
+            ConversationManager.Instance.StartConversation(conversation);
+        }
     }
 }

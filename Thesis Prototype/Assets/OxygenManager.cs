@@ -6,8 +6,7 @@ using UnityEngine.UI;
 using DialogueEditor;
 public class OxygenManager : MonoBehaviour {
 
-    [SerializeField]
-    Slider slider;
+    public Slider slider;
     [SerializeField]
     Image img;
 
