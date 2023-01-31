@@ -13,5 +13,8 @@ public class MaskObjectUtil : MonoBehaviour
         spriteRenderer.maskInteraction = SpriteMaskInteraction.VisibleInsideMask;
     }
 
+    public void RemoveSpriteMaskInteraction() {
+        spriteRenderer.maskInteraction = SpriteMaskInteraction.None;
+    }
 
 }

@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
 
     public Vector2 SpawnPos;
+    public bool isPaused;
 
     public UnityEvent OnPause,OnResume;
 
@@ -23,10 +24,12 @@ public class GameManager : MonoBehaviour
     }
 
     public void PauseGame() {
+        isPaused = true;
         Time.timeScale = 0;
         OnPause?.Invoke();
     }
     public void ResumeGame() {
+        isPaused = false;
         Time.timeScale = 1;
         OnResume?.Invoke();
     }

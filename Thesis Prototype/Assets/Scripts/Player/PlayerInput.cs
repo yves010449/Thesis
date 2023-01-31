@@ -8,9 +8,10 @@ public class PlayerInput : MonoBehaviour {
 
     public static PlayerInput instance;
     public UnityEvent<Vector2> OnMovement;
-    public UnityEvent OnInteract;
+    public UnityEvent OnInteract, OnMap;
     Vector2 input;
     bool canMove = true;
+
 
     public bool CanMove { get => canMove; set => canMove = value; }
 
@@ -20,9 +21,21 @@ public class PlayerInput : MonoBehaviour {
 
     void Update()
     {
+
+        if (Input.GetKeyDown(KeyCode.Escape)) {
+            GameManager.instance.PauseGame();
+        }
+        if (Input.GetKeyDown(KeyCode.M) && !GameManager.instance.isPaused) {
+            OnMap?.Invoke();
+        }
+        
         if (ConversationManager.Instance.IsConversationActive || !CanMove) {
-            OnMovement?.Invoke(new Vector2(0,0));
+            OnMovement?.Invoke(new Vector2(0, 0));
             return;
+        }
+
+        if (Input.GetKeyDown(KeyCode.E)) {
+            OnInteract?.Invoke();
         }
 
         input.x = Input.GetAxisRaw("Horizontal");
@@ -30,12 +43,5 @@ public class PlayerInput : MonoBehaviour {
 
         input.Normalize();
         OnMovement?.Invoke(input);
-
-        if (Input.GetKeyDown(KeyCode.E)) {
-            OnInteract?.Invoke();
-        }
-        if (Input.GetKeyDown(KeyCode.Escape)) {
-            GameManager.instance.PauseGame();
-        }
     }
 }
