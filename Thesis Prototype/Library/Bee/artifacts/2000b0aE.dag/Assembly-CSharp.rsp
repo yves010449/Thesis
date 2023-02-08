@@ -343,6 +343,7 @@
 "Assets/DialogueEditor/Assets/Scripts/UI/UIConversationButton.cs"
 "Assets/DialogueEditor/Example/ExampleInputManager.cs"
 "Assets/DisableMovementUtil.cs"
+"Assets/LearningModuleManager.cs"
 "Assets/Minimap.cs"
 "Assets/Res/GameManager.cs"
 "Assets/Scripts/Interactable/DoorController.cs"
@@ -376,6 +377,7 @@
 "Assets/Scripts/Util/ScreenEnable.cs"
 "Assets/Scripts/Util/TimerUtil.cs"
 "Assets/Scripts/Util/Trigger.cs"
+"Assets/TextManager.cs"
 -langversion:8.0
 
 /deterministic

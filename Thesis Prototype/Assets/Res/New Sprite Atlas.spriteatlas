@@ -46,6 +46,7 @@ SpriteAtlas:
     packables:
     - {fileID: 2800000, guid: c288ad18fbf7bf54892d49a97adce0a5, type: 3}
     - {fileID: 2800000, guid: 61e1400517e2c0d4191cac9fd774a695, type: 3}
+    - {fileID: 8206728123776688657, guid: 490fe74e5f192bc4db87587c58ee9386, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -178,6 +179,7 @@ SpriteAtlas:
   - {fileID: -5059141267132436655, guid: c288ad18fbf7bf54892d49a97adce0a5, type: 3}
   - {fileID: 2476097318820788647, guid: c288ad18fbf7bf54892d49a97adce0a5, type: 3}
   - {fileID: 3289425289527110587, guid: c288ad18fbf7bf54892d49a97adce0a5, type: 3}
+  - {fileID: 8206728123776688657, guid: 490fe74e5f192bc4db87587c58ee9386, type: 3}
   m_PackedSpriteNamesToIndex:
   - CosmicLilac_AnimatedSpriteSheet_58
   - CosmicLilac_AnimatedSpriteSheet_21
@@ -306,6 +308,7 @@ SpriteAtlas:
   - CosmicLilac_Tiles_22
   - CosmicLilac_Tiles_21
   - CosmicLilac_Tiles_20
+  - obj_keys_4
   m_RenderDataMap: {}
   m_Tag: New Sprite Atlas
   m_IsVariant: 0

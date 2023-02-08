@@ -17,6 +17,7 @@ public class PlayerInput : MonoBehaviour {
 
     private void Awake() {
         instance = this;
+
     }
 
     void Update()
