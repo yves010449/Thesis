@@ -15949,7 +15949,7 @@ IL_0039:
 		DataContractCriticalHelper_set_StableName_m9FB401DBD711535ABB78FD979309E38F462E6036_inline(__this, L_11, /*hidden argument*/NULL);
 		Type_t * L_12 = ___type0;
 		Type_t * L_13;
-		L_13 = VirtualFuncInvoker0< Type_t * >::Invoke(99 /* System.Type System.Type::GetElementType() */, L_12);
+		L_13 = VirtualFuncInvoker0< Type_t * >::Invoke(97 /* System.Type System.Type::GetElementType() */, L_12);
 		CollectionDataContractCriticalHelper_Init_m353E0008484429C041945260505FC267AA5EAD4F(__this, ((int32_t)9), L_13, (CollectionDataContractAttribute_t9877D84EEC1FB4F860863BE4F58E3352013645DC *)NULL, /*hidden argument*/NULL);
 		return;
 	}
@@ -16008,7 +16008,7 @@ IL_0025:
 		__this->set_itemContract_34(L_14);
 		Type_t * L_15 = ___type0;
 		Type_t * L_16;
-		L_16 = VirtualFuncInvoker0< Type_t * >::Invoke(99 /* System.Type System.Type::GetElementType() */, L_15);
+		L_16 = VirtualFuncInvoker0< Type_t * >::Invoke(97 /* System.Type System.Type::GetElementType() */, L_15);
 		CollectionDataContractCriticalHelper_Init_m353E0008484429C041945260505FC267AA5EAD4F(__this, ((int32_t)9), L_16, (CollectionDataContractAttribute_t9877D84EEC1FB4F860863BE4F58E3352013645DC *)NULL, /*hidden argument*/NULL);
 		return;
 	}
@@ -17404,7 +17404,7 @@ IL_006e:
 		{
 			Type_t * L_27 = ___type2;
 			bool L_28;
-			L_28 = VirtualFuncInvoker0< bool >::Invoke(72 /* System.Boolean System.Type::get_IsEnum() */, L_27);
+			L_28 = VirtualFuncInvoker0< bool >::Invoke(70 /* System.Boolean System.Type::get_IsEnum() */, L_27);
 			if (!L_28)
 			{
 				goto IL_0082;
@@ -17424,7 +17424,7 @@ IL_0082:
 		{
 			Type_t * L_31 = ___type2;
 			bool L_32;
-			L_32 = VirtualFuncInvoker0< bool >::Invoke(78 /* System.Boolean System.Type::get_IsGenericParameter() */, L_31);
+			L_32 = VirtualFuncInvoker0< bool >::Invoke(76 /* System.Boolean System.Type::get_IsGenericParameter() */, L_31);
 			if (!L_32)
 			{
 				goto IL_0093;
@@ -17447,7 +17447,7 @@ IL_0093:
 			L_35 = Globals_get_TypeOfIXmlSerializable_mFB98B25BDFF66586803D490C95B80BAA6BAB16C4(/*hidden argument*/NULL);
 			Type_t * L_36 = ___type2;
 			bool L_37;
-			L_37 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_35, L_36);
+			L_37 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(108 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_35, L_36);
 			if (!L_37)
 			{
 				goto IL_00a9;
@@ -17497,7 +17497,7 @@ IL_00c2:
 		{
 			Type_t * L_45 = ___type2;
 			bool L_46;
-			L_46 = VirtualFuncInvoker0< bool >::Invoke(73 /* System.Boolean System.Type::get_IsSerializable() */, L_45);
+			L_46 = VirtualFuncInvoker0< bool >::Invoke(71 /* System.Boolean System.Type::get_IsSerializable() */, L_45);
 			if (L_46)
 			{
 				goto IL_00e0;
@@ -19021,7 +19021,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DataContractCriticalHelper_TryCreateBuil
 	{
 		Type_t * L_0 = ___type0;
 		bool L_1;
-		L_1 = VirtualFuncInvoker0< bool >::Invoke(72 /* System.Boolean System.Type::get_IsEnum() */, L_0);
+		L_1 = VirtualFuncInvoker0< bool >::Invoke(70 /* System.Boolean System.Type::get_IsEnum() */, L_0);
 		if (!L_1)
 		{
 			goto IL_000d;
@@ -21466,7 +21466,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DataContractCriticalHelper_SetTypeForIni
 	{
 		Type_t * L_0 = ___classType0;
 		bool L_1;
-		L_1 = VirtualFuncInvoker0< bool >::Invoke(73 /* System.Boolean System.Type::get_IsSerializable() */, L_0);
+		L_1 = VirtualFuncInvoker0< bool >::Invoke(71 /* System.Boolean System.Type::get_IsSerializable() */, L_0);
 		if (L_1)
 		{
 			goto IL_0016;
@@ -22561,7 +22561,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EnumDataContractCriticalHelper_ImportDat
 		V_0 = L_0;
 		Type_t * L_1 = V_0;
 		FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E* L_2;
-		L_2 = VirtualFuncInvoker1< FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E*, int32_t >::Invoke(45 /* System.Reflection.FieldInfo[] System.Type::GetFields(System.Reflection.BindingFlags) */, L_1, ((int32_t)24));
+		L_2 = VirtualFuncInvoker1< FieldInfoU5BU5D_tD84513FCA07C63AAFE671A5B39E3ADD6E903938E*, int32_t >::Invoke(43 /* System.Reflection.FieldInfo[] System.Type::GetFields(System.Reflection.BindingFlags) */, L_1, ((int32_t)24));
 		V_1 = L_2;
 		Dictionary_2_tD5E54675501DDA58E13E521F052D9930EF4DBDAF * L_3 = (Dictionary_2_tD5E54675501DDA58E13E521F052D9930EF4DBDAF *)il2cpp_codegen_object_new(Dictionary_2_tD5E54675501DDA58E13E521F052D9930EF4DBDAF_il2cpp_TypeInfo_var);
 		Dictionary_2__ctor_m2E1988F43469E1A5D6B96F8EC17DD7FB9F3CA83A(L_3, /*hidden argument*/Dictionary_2__ctor_m2E1988F43469E1A5D6B96F8EC17DD7FB9F3CA83A_RuntimeMethod_var);
@@ -22895,7 +22895,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GenericParameterDataContractCriticalHelp
 		DataContractCriticalHelper_SetDataContractName_m14230DE920AE6541AC4AF0754A69D621A5B4CB13(__this, L_2, /*hidden argument*/NULL);
 		Type_t * L_3 = ___type0;
 		int32_t L_4;
-		L_4 = VirtualFuncInvoker0< int32_t >::Invoke(79 /* System.Int32 System.Type::get_GenericParameterPosition() */, L_3);
+		L_4 = VirtualFuncInvoker0< int32_t >::Invoke(77 /* System.Int32 System.Type::get_GenericParameterPosition() */, L_3);
 		__this->set_parameterPosition_25(L_4);
 		return;
 	}
@@ -24175,7 +24175,7 @@ IL_008a:
 			Type_t * L_21;
 			L_21 = CollectionDataContract_get_ItemType_mB4F47F5228BA0C1D1D16D869F0F0451841635FAF(L_20, /*hidden argument*/NULL);
 			bool L_22;
-			L_22 = VirtualFuncInvoker0< bool >::Invoke(76 /* System.Boolean System.Type::get_IsGenericType() */, L_21);
+			L_22 = VirtualFuncInvoker0< bool >::Invoke(74 /* System.Boolean System.Type::get_IsGenericType() */, L_21);
 			if (!L_22)
 			{
 				goto IL_00f7;
@@ -24188,7 +24188,7 @@ IL_0097:
 			Type_t * L_24;
 			L_24 = CollectionDataContract_get_ItemType_mB4F47F5228BA0C1D1D16D869F0F0451841635FAF(L_23, /*hidden argument*/NULL);
 			Type_t * L_25;
-			L_25 = VirtualFuncInvoker0< Type_t * >::Invoke(101 /* System.Type System.Type::GetGenericTypeDefinition() */, L_24);
+			L_25 = VirtualFuncInvoker0< Type_t * >::Invoke(99 /* System.Type System.Type::GetGenericTypeDefinition() */, L_24);
 			RuntimeTypeHandle_tC33965ADA3E041E0C94AF05E5CB527B56482CEF9  L_26 = { reinterpret_cast<intptr_t> (KeyValue_2_t8DE6C8826ACB5EA9DC0734FAA3447A502D335AAF_0_0_0_var) };
 			IL2CPP_RUNTIME_CLASS_INIT(Type_t_il2cpp_TypeInfo_var);
 			Type_t * L_27;
@@ -24210,9 +24210,9 @@ IL_00b3:
 			Type_t * L_31;
 			L_31 = CollectionDataContract_get_ItemType_mB4F47F5228BA0C1D1D16D869F0F0451841635FAF(L_30, /*hidden argument*/NULL);
 			TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* L_32;
-			L_32 = VirtualFuncInvoker0< TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(100 /* System.Type[] System.Type::GetGenericArguments() */, L_31);
+			L_32 = VirtualFuncInvoker0< TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(98 /* System.Type[] System.Type::GetGenericArguments() */, L_31);
 			Type_t * L_33;
-			L_33 = VirtualFuncInvoker1< Type_t *, TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(96 /* System.Type System.Type::MakeGenericType(System.Type[]) */, L_29, L_32);
+			L_33 = VirtualFuncInvoker1< Type_t *, TypeU5BU5D_t85B10489E46F06CEC7C4B1CCBD0E01FAB6649755* >::Invoke(94 /* System.Type System.Type::MakeGenericType(System.Type[]) */, L_29, L_32);
 			DataContract_t2532937602A7512698085FE1EB691B9AEF058B15 * L_34;
 			L_34 = DataContract_GetDataContract_m9C4936822EB5B5107B61C6C8913F659708300F34(L_33, /*hidden argument*/NULL);
 			V_4 = L_34;

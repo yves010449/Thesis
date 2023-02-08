@@ -9,7 +9,8 @@ public class OxygenManager : MonoBehaviour {
     public Slider slider;
     [SerializeField]
     Image img;
-
+    [SerializeField]
+    float depleteRate = 1f;
     public UnityEvent OnDeath;
 
     bool isDepleting = true;
@@ -58,11 +59,11 @@ public class OxygenManager : MonoBehaviour {
             }
             if(slider.value <= slider.maxValue * 0.35f) {
                 img.transform.gameObject.SetActive(true);
-                yield return new WaitForSeconds(2f);
+                yield return new WaitForSeconds(depleteRate+1f);
             }
             else {
                 img.transform.gameObject.SetActive(false);
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(depleteRate);
             }
                 
         }
