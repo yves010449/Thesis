@@ -4,46 +4,44 @@ using UnityEngine;
 using DialogueEditor;
 public class QuestionManager : MonoBehaviour
 {
-    public int CurrentIndex = 0;
+    public NPCConversation[] Conversation;
 
-    public List<NPCConversation> Conversation = new List<NPCConversation>();
+    int conversationIndex = 0;
 
-    [SerializeField]
-    NPCConversation noConvo;
 
-    private void Start() {
-        StartCoroutine(checkDialogue());
+    private void OnEnable() {
+        ConversationManager.OnConversationStarted += ConversationStart;
+        ConversationManager.OnConversationEnded += ConversationEnd;
     }
 
-    public void StartQuestion(NPCConversation conversation) {
-        ConversationManager.Instance.EndConversation();
-        ConversationManager.Instance.StartConversation(conversation);
+    private void OnDisable() {
+        ConversationManager.OnConversationStarted -= ConversationStart;
+        ConversationManager.OnConversationEnded -= ConversationEnd;
     }
 
-    public void StartRandomQuestion() {
-        if (Conversation.Count != 0) {
-            ConversationManager.Instance.StartConversation(Conversation[CurrentIndex]);
-            CurrentIndex++;
-            if(CurrentIndex == Conversation.Count) {
-                CurrentIndex = 0;
+    private void ConversationStart() {
+    }
+
+    private void ConversationEnd() {
+        if (GameObject.FindGameObjectWithTag("RobotUI") != null)
+            GameObject.FindGameObjectWithTag("RobotUI").SetActive(false);
+    }
+
+
+    public void StartConversation() {
+        if (Conversation != null) {
+            ConversationManager.Instance.StartConversation(Conversation[conversationIndex]);
+            conversationIndex++;
+            if(conversationIndex>= Conversation.Length) {
+                conversationIndex = 0;
             }
         }
-        else {
-            ConversationManager.Instance.StartConversation(noConvo);
-            gameObject.SetActive(false);
-        }
+    }
         
+
+    public void StartConversation(int conversation) {
+        ConversationManager.Instance.StartConversation(Conversation[conversation]);
     }
 
-    public void AddQuestions(QuestionHolder questions) {
-        for(int i = 0; i < questions.Conversation.Count; i++) {
-            Conversation.Add(questions.Conversation[i]);
-        }
-    }
-    IEnumerator checkDialogue() {
-        if (!ConversationManager.Instance.IsConversationActive) {
-            gameObject.SetActive(false);
-        }
-        yield return new WaitForSeconds(2f);
-    }
+
 }
