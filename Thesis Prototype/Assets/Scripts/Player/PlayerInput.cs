@@ -8,7 +8,7 @@ public class PlayerInput : MonoBehaviour {
 
     public static PlayerInput instance;
     public UnityEvent<Vector2> OnMovement;
-    public UnityEvent OnInteract, OnMap;
+    public UnityEvent OnInteract, OnMap, OnLearningTerminal;
     Vector2 input;
     bool canMove = true;
 
@@ -29,7 +29,11 @@ public class PlayerInput : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.M) && !GameManager.instance.isPaused) {
             OnMap?.Invoke();
         }
-        
+        if (Input.GetKeyDown(KeyCode.Tab) && !GameManager.instance.isPaused) {
+            OnLearningTerminal?.Invoke();
+        }
+
+
         if (ConversationManager.Instance.IsConversationActive || !CanMove) {
             OnMovement?.Invoke(new Vector2(0, 0));
             return;

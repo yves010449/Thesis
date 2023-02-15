@@ -6,6 +6,8 @@ using UnityEngine.UI;
 using DialogueEditor;
 public class OxygenManager : MonoBehaviour {
 
+    public static OxygenManager instance;
+
     public Slider slider;
     [SerializeField]
     Image img;
@@ -16,6 +18,10 @@ public class OxygenManager : MonoBehaviour {
     bool isDepleting = true;
 
     public bool IsDepleting { get => isDepleting; set => isDepleting = value; }
+
+    private void Awake() {
+        instance = this;
+    }
 
     // Start is called before the first frame update
     private void Start() {
@@ -47,7 +53,9 @@ public class OxygenManager : MonoBehaviour {
     public void RefillOxygen() {
         slider.value = slider.maxValue;
     }
-
+    public void IncreaseMaxOxygen(float value) {
+        slider.maxValue += value;
+    }
     IEnumerator DepleteOxygen() {
         while (true) {
             if (isDepleting && !ConversationManager.Instance.IsConversationActive) {

@@ -5,6 +5,7 @@ using DialogueEditor;
 
 public class Movement : MonoBehaviour
 {
+
     public float MovementSpeed;
     Rigidbody2D rb;
     Vector2 input;
