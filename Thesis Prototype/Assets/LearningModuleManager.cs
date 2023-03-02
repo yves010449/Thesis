@@ -17,6 +17,11 @@ public class LearningModuleManager : MonoBehaviour
     public UnityEvent OnCollectAll;
     // Start is called before the first frame update
 
+    public int totalQuestions = 0;
+    public int totalCorrectAnswers = 0;
+    public int totalDeaths= 0;
+
+
     private void Awake() {
         instance = this;
 
@@ -25,6 +30,7 @@ public class LearningModuleManager : MonoBehaviour
     void Start()
     {
         tmp.SetText($"LEARNING MODULES FOUND: {learningModuleCollected} out of {maxlearningModule}");
+
     }
 
     public void AddCollected() {
@@ -39,4 +45,30 @@ public class LearningModuleManager : MonoBehaviour
             OnCollectAll?.Invoke();
         }
     }
+
+    public void CorrectAnswer() {
+        totalCorrectAnswers++;
+        totalQuestions++;
+    }
+    public void IncorrectAnswer() {
+        totalQuestions++;
+    }
+    public void Death() {
+        totalDeaths++;
+    }
+
+    public int ComputeAccuracy() {
+        return (totalCorrectAnswers / totalQuestions) * 100;
+    }
+
+    //IEnumerator Timer() {
+    //    yield return new WaitForSeconds(1);
+    //}
+
+    //float currentTime = 0;
+
+    //private void Update() {
+    //    currentTime += Time.deltaTime;
+    //    Debug.Log(currentTime);
+    //}
 }

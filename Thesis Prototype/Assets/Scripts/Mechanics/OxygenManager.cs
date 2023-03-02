@@ -13,6 +13,8 @@ public class OxygenManager : MonoBehaviour {
     Image img;
     [SerializeField]
     float depleteRate = 1f;
+    [SerializeField]
+    float OxygenAddAmount = 5f;
     public UnityEvent OnDeath;
 
     bool isDepleting = true;
@@ -44,7 +46,7 @@ public class OxygenManager : MonoBehaviour {
         slider.value += amount;
     }
     public void AddOxygen() {
-        slider.value += 5;
+        slider.value += OxygenAddAmount;
     }
 
     public void ReduceOxygen(int amount) {
@@ -58,6 +60,11 @@ public class OxygenManager : MonoBehaviour {
     }
     IEnumerator DepleteOxygen() {
         while (true) {
+            if(slider.value == slider.maxValue) {
+                img.transform.gameObject.SetActive(false);
+                yield return new WaitForSeconds(10);
+            }
+
             if (isDepleting && !ConversationManager.Instance.IsConversationActive) {
                 slider.value -= 1;
             }

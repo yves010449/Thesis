@@ -23,6 +23,6 @@ public class Movement : MonoBehaviour
             rb.velocity = Vector2.zero;
             return;
         }
-        rb.velocity = Input * MovementSpeed;
+        rb.velocity = Input * MovementSpeed * Time.fixedDeltaTime;
     }
 }

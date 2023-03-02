@@ -7,32 +7,28 @@ public class DoorController : MonoBehaviour
 {
     [SerializeField]
     Animator animator;
-    [SerializeField]
-    NPCConversation conversation;
-    public bool isUnlocked;
+
+    public bool Locked;
 
     public void Unlock() {
-        isUnlocked = true;
+        Locked = false;
     }
     public void Lock() {
-        isUnlocked = false;
+        Locked = true;
     }
 
     public void Open() {
-        animator.SetBool("isUnlocked", isUnlocked);
-        if(animator.GetBool("isUnlocked"))
-            animator.SetTrigger("Open");
+        if (!Locked) {
+            animator.SetBool("isOpen", true);
+        }
+        
     }
 
     public void Close() {
-        animator.SetBool("isUnlocked", isUnlocked);
-        if (animator.GetBool("isUnlocked"))
-            animator.SetTrigger("Close");
-    }
-
-    public void DoorIsLocked() {
-        if (!isUnlocked) {
-            ConversationManager.Instance.StartConversation(conversation);
+        if (!Locked) {
+            animator.SetBool("isOpen", false);
         }
     }
+
+    
 }
