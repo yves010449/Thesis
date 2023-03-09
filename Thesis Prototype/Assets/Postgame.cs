@@ -13,7 +13,7 @@ public class Postgame : MonoBehaviour
     //TextMeshProUGUI tmpTime;
 
     private void OnEnable() {
-        tmpAccuracy.SetText($"Your overall accuracy in answering code bot is {LearningModuleManager.instance.ComputeAccuracy()}");
+        tmpAccuracy.SetText($"Your overall accuracy in answering code bot is {LearningModuleManager.instance.ComputeAccuracy()}%");
         tmpDeath.SetText($"You died: {LearningModuleManager.instance.totalDeaths} times");
 
     }

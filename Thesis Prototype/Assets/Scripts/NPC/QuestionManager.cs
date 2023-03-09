@@ -4,10 +4,14 @@ using UnityEngine;
 using DialogueEditor;
 public class QuestionManager : MonoBehaviour
 {
-    public NPCConversation[] Conversation;
+    public static QuestionManager instance;
 
+    public List<NPCConversation> Conversations = new List<NPCConversation>();
     int conversationIndex = 0;
 
+    private void Awake() {
+        instance = this;
+    }
 
     private void OnEnable() {
         ConversationManager.OnConversationStarted += ConversationStart;
@@ -29,19 +33,21 @@ public class QuestionManager : MonoBehaviour
 
 
     public void StartConversation() {
-        if (Conversation != null) {
-            ConversationManager.Instance.StartConversation(Conversation[conversationIndex]);
-            conversationIndex++;
-            if(conversationIndex>= Conversation.Length) {
-                conversationIndex = 0;
-            }
+        Debug.Log(Conversations.Count);
+        if (Conversations.Count != 1) {
+            ConversationManager.Instance.StartConversation(Conversations[Random.Range(1,Conversations.Count)]);
+        }
+        else {
+            ConversationManager.Instance.StartConversation(Conversations[0]);
         }
     }
         
 
     public void StartConversation(int conversation) {
-        ConversationManager.Instance.StartConversation(Conversation[conversation]);
+        ConversationManager.Instance.StartConversation(Conversations[conversation]);
     }
+
+    
 
 
 }
