@@ -6,8 +6,11 @@ public class QuestionManager : MonoBehaviour
 {
     public static QuestionManager instance;
 
-    public List<NPCConversation> Conversations = new List<NPCConversation>();
-    int conversationIndex = 0;
+    public List<NPCConversation> ActiveConversations = new List<NPCConversation>();
+    List<NPCConversation> InactiveConversations = new List<NPCConversation>();
+
+    [SerializeField]
+    NPCConversation noQuestion;
 
     private void Awake() {
         instance = this;
@@ -33,18 +36,25 @@ public class QuestionManager : MonoBehaviour
 
 
     public void StartConversation() {
-        Debug.Log(Conversations.Count);
-        if (Conversations.Count != 1) {
-            ConversationManager.Instance.StartConversation(Conversations[Random.Range(1,Conversations.Count)]);
+        if (ActiveConversations.Count != 1) {
+            int index = Random.Range(1, ActiveConversations.Count);
+            ConversationManager.Instance.StartConversation(ActiveConversations[index]);
+            InactiveConversations.Add(ActiveConversations[index]);
+            ActiveConversations.Remove(ActiveConversations[index]);
+
         }
         else {
-            ConversationManager.Instance.StartConversation(Conversations[0]);
+            ActiveConversations = InactiveConversations;
+            int index = Random.Range(1, ActiveConversations.Count);
+            ConversationManager.Instance.StartConversation(ActiveConversations[index]);
+            InactiveConversations.Add(ActiveConversations[index]);
+            ActiveConversations.Remove(ActiveConversations[index]);          
         }
     }
         
 
     public void StartConversation(int conversation) {
-        ConversationManager.Instance.StartConversation(Conversations[conversation]);
+        ConversationManager.Instance.StartConversation(ActiveConversations[conversation]);
     }
 
     

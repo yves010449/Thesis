@@ -11,7 +11,7 @@ public class QuestionHolder : MonoBehaviour {
 
     public void AddQuestions() {
         for (int i = 0; i < conversations.Length; i++) {
-            QuestionManager.Conversations.Add(conversations[i]);
+            QuestionManager.ActiveConversations.Add(conversations[i]);
         }
     }
 }

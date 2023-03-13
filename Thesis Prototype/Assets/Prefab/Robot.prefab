@@ -57,8 +57,8 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: -2128255121
-  m_SortingOrder: 1
+  m_SortingLayerID: -549214615
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!114 &2236414783573732060
 MonoBehaviour:
@@ -498,7 +498,7 @@ SpriteRenderer:
   m_SortingLayerID: -79200009
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7319947678641611153, guid: 47184509d7a2a8248b678bd74d8b8d8a, type: 3}
+  m_Sprite: {fileID: 4367925953544552668, guid: 30a1e15c353f83d47a48b3b228216d48, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -551,7 +551,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2236414784669325703}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f0bd969692f24a4abca6a0ee1b5e359, type: 3}
   m_Name: 
