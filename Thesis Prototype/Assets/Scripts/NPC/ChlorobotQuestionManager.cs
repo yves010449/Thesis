@@ -2,15 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DialogueEditor;
-public class QuestionManager : MonoBehaviour
+using TMPro;
+
+public class ChlorobotQuestionManager : MonoBehaviour
 {
-    public static QuestionManager instance;
+    public static ChlorobotQuestionManager instance;
 
     public List<NPCConversation> ActiveConversations = new List<NPCConversation>();
     List<NPCConversation> InactiveConversations = new List<NPCConversation>();
 
     [SerializeField]
-    NPCConversation noQuestion;
+    TextMeshProUGUI ScreenText;
 
     private void Awake() {
         instance = this;
@@ -24,14 +26,17 @@ public class QuestionManager : MonoBehaviour
     private void OnDisable() {
         ConversationManager.OnConversationStarted -= ConversationStart;
         ConversationManager.OnConversationEnded -= ConversationEnd;
+       
     }
 
     private void ConversationStart() {
     }
 
     private void ConversationEnd() {
-        if (GameObject.FindGameObjectWithTag("RobotUI") != null)
+        if (GameObject.FindGameObjectWithTag("RobotUI") != null) {
             GameObject.FindGameObjectWithTag("RobotUI").SetActive(false);
+            ScreenText.SetText("");
+        }
     }
 
 
@@ -57,7 +62,9 @@ public class QuestionManager : MonoBehaviour
         ConversationManager.Instance.StartConversation(ActiveConversations[conversation]);
     }
 
-    
+    public void SetText(CodeText code) {
+        ScreenText.SetText(code.Code);
+    }
 
 
 }

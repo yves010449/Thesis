@@ -4,7 +4,7 @@ using UnityEngine;
 using DialogueEditor;
 public class QuestionHolder : MonoBehaviour {
     [SerializeField]
-    QuestionManager QuestionManager;
+    ChlorobotQuestionManager QuestionManager;
     [SerializeField]
     NPCConversation[] conversations;
     

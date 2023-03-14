@@ -29,8 +29,8 @@ namespace DialogueEditor
                     ConversationManager.Instance.SelectNextOption();
                 else if (Input.GetKeyDown(m_SelectKey))
                     ConversationManager.Instance.PressSelectedOption();
-                //else if (Input.GetKeyDown(m_EscapeKey))
-                    //ConversationManager.Instance.;
+                else if (Input.GetKeyDown(m_EscapeKey))
+                    ConversationManager.Instance.EndConversation();
             }
         }
     }
