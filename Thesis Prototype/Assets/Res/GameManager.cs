@@ -43,4 +43,8 @@ public class GameManager : MonoBehaviour
         Debug.Log("Exit");
         Application.Quit();
     }
+
+    public void OpenSurvey(string url) {
+        Application.OpenURL(url);
+    }
 }

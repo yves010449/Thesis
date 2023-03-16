@@ -14,7 +14,7 @@ public class LearningModuleManager : MonoBehaviour
     [SerializeField]
     int maxlearningModule = 1;
 
-    public UnityEvent OnCollectAll;
+    public UnityEvent OnCollectAll, OnCorrect, OnInCorrect;
     // Start is called before the first frame update
 
     public int totalQuestions = 0;
@@ -47,13 +47,16 @@ public class LearningModuleManager : MonoBehaviour
     }
 
     public void CorrectAnswer() {
+        OnCorrect?.Invoke();
         totalCorrectAnswers++;
         totalQuestions++;
     }
     public void IncorrectAnswer() {
+        OnInCorrect?.Invoke();
         totalQuestions++;
     }
     public void Death() {
+        PlayerInput.instance.CanMove = false;
         totalDeaths++;
     }
 

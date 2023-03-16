@@ -12,7 +12,6 @@ public class InteractManager : Interactions {
 
 
     public override void Interact() {
-        Debug.Log("Interact");
             OnInteract?.Invoke();
     }
 

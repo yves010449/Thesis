@@ -18034,7 +18034,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PrimitiveDataContract_Equals_m785CC87498
 		Type_t * L_4 = V_0;
 		Type_t * L_5 = V_1;
 		bool L_6;
-		L_6 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(111 /* System.Boolean System.Type::Equals(System.Type) */, L_4, L_5);
+		L_6 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(113 /* System.Boolean System.Type::Equals(System.Type) */, L_4, L_5);
 		if (L_6)
 		{
 			goto IL_0030;
@@ -18044,7 +18044,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PrimitiveDataContract_Equals_m785CC87498
 		Type_t * L_7 = V_0;
 		Type_t * L_8 = V_1;
 		bool L_9;
-		L_9 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(106 /* System.Boolean System.Type::IsSubclassOf(System.Type) */, L_7, L_8);
+		L_9 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(108 /* System.Boolean System.Type::IsSubclassOf(System.Type) */, L_7, L_8);
 		if (L_9)
 		{
 			goto IL_0030;
@@ -18054,7 +18054,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool PrimitiveDataContract_Equals_m785CC87498
 		Type_t * L_10 = V_1;
 		Type_t * L_11 = V_0;
 		bool L_12;
-		L_12 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(106 /* System.Boolean System.Type::IsSubclassOf(System.Type) */, L_10, L_11);
+		L_12 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(108 /* System.Boolean System.Type::IsSubclassOf(System.Type) */, L_10, L_11);
 		return L_12;
 	}
 
@@ -18723,7 +18723,7 @@ IL_00dc:
 		Type_t * L_55;
 		L_55 = VirtualFuncInvoker0< Type_t * >::Invoke(38 /* System.Type System.Reflection.MethodInfo::get_ReturnType() */, L_54);
 		bool L_56;
-		L_56 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(108 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_53, L_55);
+		L_56 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_53, L_55);
 		if (L_56)
 		{
 			goto IL_0150;
@@ -18737,7 +18737,7 @@ IL_00dc:
 		Type_t * L_59;
 		L_59 = VirtualFuncInvoker0< Type_t * >::Invoke(38 /* System.Type System.Reflection.MethodInfo::get_ReturnType() */, L_58);
 		bool L_60;
-		L_60 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(108 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_57, L_59);
+		L_60 = VirtualFuncInvoker1< bool, Type_t * >::Invoke(110 /* System.Boolean System.Type::IsAssignableFrom(System.Type) */, L_57, L_59);
 		if (L_60)
 		{
 			goto IL_0150;
@@ -21485,7 +21485,7 @@ IL_001f:
 	{
 		Type_t * L_7 = V_0;
 		Type_t * L_8;
-		L_8 = VirtualFuncInvoker0< Type_t * >::Invoke(97 /* System.Type System.Type::GetElementType() */, L_7);
+		L_8 = VirtualFuncInvoker0< Type_t * >::Invoke(99 /* System.Type System.Type::GetElementType() */, L_7);
 		RuntimeArray * L_9;
 		L_9 = Array_CreateInstance_m57AC02F4475AF70CA317B48F09B3C29E3BA9C046(L_8, 0, /*hidden argument*/NULL);
 		G_B3_0 = ((RuntimeObject *)(L_9));

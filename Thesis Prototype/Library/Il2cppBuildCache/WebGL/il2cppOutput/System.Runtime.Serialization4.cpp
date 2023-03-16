@@ -35092,7 +35092,7 @@ IL_0025:
 	{
 		Type_t * L_5 = ___memberType0;
 		Type_t * L_6;
-		L_6 = VirtualFuncInvoker0< Type_t * >::Invoke(97 /* System.Type System.Type::GetElementType() */, L_5);
+		L_6 = VirtualFuncInvoker0< Type_t * >::Invoke(99 /* System.Type System.Type::GetElementType() */, L_5);
 		___memberType0 = L_6;
 	}
 

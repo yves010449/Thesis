@@ -28,6 +28,7 @@ public class UpgradeManager : MonoBehaviour
     [SerializeField]
     float FovIncreaseAmount = 0.1f;
 
+
     private void Awake() {
         instance = this;
     }

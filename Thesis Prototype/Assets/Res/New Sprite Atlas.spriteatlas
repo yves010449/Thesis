@@ -47,6 +47,8 @@ SpriteAtlas:
     - {fileID: 2800000, guid: c288ad18fbf7bf54892d49a97adce0a5, type: 3}
     - {fileID: 2800000, guid: 61e1400517e2c0d4191cac9fd774a695, type: 3}
     - {fileID: 8206728123776688657, guid: 490fe74e5f192bc4db87587c58ee9386, type: 3}
+    - {fileID: 2800000, guid: ed58c1574e131f04aa819a66293dab4d, type: 3}
+    - {fileID: 2800000, guid: 30a1e15c353f83d47a48b3b228216d48, type: 3}
     bindAsDefault: 1
     isAtlasV2: 0
     cachedData: {fileID: 0}
@@ -87,6 +89,15 @@ SpriteAtlas:
   - {fileID: 1584029563475729113, guid: 61e1400517e2c0d4191cac9fd774a695, type: 3}
   - {fileID: -2490322246851266288, guid: 61e1400517e2c0d4191cac9fd774a695, type: 3}
   - {fileID: -8036089067727510946, guid: 61e1400517e2c0d4191cac9fd774a695, type: 3}
+  - {fileID: 5266522172611156911, guid: ed58c1574e131f04aa819a66293dab4d, type: 3}
+  - {fileID: 7072283425972585876, guid: ed58c1574e131f04aa819a66293dab4d, type: 3}
+  - {fileID: -2313959181161963052, guid: ed58c1574e131f04aa819a66293dab4d, type: 3}
+  - {fileID: -1232802246103805985, guid: ed58c1574e131f04aa819a66293dab4d, type: 3}
+  - {fileID: 8709164509324851089, guid: ed58c1574e131f04aa819a66293dab4d, type: 3}
+  - {fileID: 5449764685408502024, guid: ed58c1574e131f04aa819a66293dab4d, type: 3}
+  - {fileID: 2927279122013068834, guid: ed58c1574e131f04aa819a66293dab4d, type: 3}
+  - {fileID: 4698725240660643969, guid: ed58c1574e131f04aa819a66293dab4d, type: 3}
+  - {fileID: 1312779054339361904, guid: ed58c1574e131f04aa819a66293dab4d, type: 3}
   - {fileID: -4758721063294455966, guid: c288ad18fbf7bf54892d49a97adce0a5, type: 3}
   - {fileID: -1703068498387072479, guid: c288ad18fbf7bf54892d49a97adce0a5, type: 3}
   - {fileID: -9213492281451189013, guid: c288ad18fbf7bf54892d49a97adce0a5, type: 3}
@@ -179,6 +190,8 @@ SpriteAtlas:
   - {fileID: -5059141267132436655, guid: c288ad18fbf7bf54892d49a97adce0a5, type: 3}
   - {fileID: 2476097318820788647, guid: c288ad18fbf7bf54892d49a97adce0a5, type: 3}
   - {fileID: 3289425289527110587, guid: c288ad18fbf7bf54892d49a97adce0a5, type: 3}
+  - {fileID: -7733191411508970000, guid: 30a1e15c353f83d47a48b3b228216d48, type: 3}
+  - {fileID: 4367925953544552668, guid: 30a1e15c353f83d47a48b3b228216d48, type: 3}
   - {fileID: 8206728123776688657, guid: 490fe74e5f192bc4db87587c58ee9386, type: 3}
   m_PackedSpriteNamesToIndex:
   - CosmicLilac_AnimatedSpriteSheet_58
@@ -216,6 +229,15 @@ SpriteAtlas:
   - CosmicLilac_AnimatedSpriteSheet_39
   - CosmicLilac_AnimatedSpriteSheet_1
   - CosmicLilac_AnimatedSpriteSheet_0
+  - Sparkle-Sheet_8
+  - Sparkle-Sheet_4
+  - Sparkle-Sheet_5
+  - Sparkle-Sheet_6
+  - Sparkle-Sheet_7
+  - Sparkle-Sheet_0
+  - Sparkle-Sheet_1
+  - Sparkle-Sheet_2
+  - Sparkle-Sheet_3
   - CosmicLilac_Tiles_70
   - CosmicLilac_Tiles_71
   - CosmicLilac_Tiles_72
@@ -308,6 +330,8 @@ SpriteAtlas:
   - CosmicLilac_Tiles_22
   - CosmicLilac_Tiles_21
   - CosmicLilac_Tiles_20
+  - Bobbing chlorobot_1
+  - Bobbing chlorobot_0
   - obj_keys_4
   m_RenderDataMap: {}
   m_Tag: New Sprite Atlas
