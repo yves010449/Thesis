@@ -1,0 +1,675 @@
+fileFormatVersion: 2
+guid: b913cbfb599335349a61569f5ad4e3c4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5315530825663566206
+    second: gifigif-Sheet (1) 1_0
+  - first:
+      213: 1686381451682029153
+    second: gifigif-Sheet (1) 1_1
+  - first:
+      213: 1843983645768663611
+    second: gifigif-Sheet (1) 1_2
+  - first:
+      213: 3922577556643993008
+    second: gifigif-Sheet (1) 1_3
+  - first:
+      213: -8008437225964203814
+    second: gifigif-Sheet (1) 1_4
+  - first:
+      213: -3141596861780148931
+    second: gifigif-Sheet (1) 1_5
+  - first:
+      213: -2337373140791292311
+    second: gifigif-Sheet (1) 1_6
+  - first:
+      213: -6077118782643223913
+    second: gifigif-Sheet (1) 1_7
+  - first:
+      213: -875679711552524032
+    second: gifigif-Sheet (1) 1_8
+  - first:
+      213: -186804578983967204
+    second: gifigif-Sheet (1) 1_9
+  - first:
+      213: -8946354755847738495
+    second: gifigif-Sheet (1) 1_10
+  - first:
+      213: -5903044269445796370
+    second: gifigif-Sheet (1) 1_11
+  - first:
+      213: 8225342999825724970
+    second: gifigif-Sheet (1) 1_12
+  - first:
+      213: -4874023556613108304
+    second: gifigif-Sheet (1) 1_13
+  - first:
+      213: 9026341236704477504
+    second: gifigif-Sheet (1) 1_14
+  - first:
+      213: -978374643336002676
+    second: gifigif-Sheet (1) 1_15
+  - first:
+      213: 574490206367217132
+    second: gifigif-Sheet (1) 1_16
+  - first:
+      213: -9177083135733970478
+    second: gifigif-Sheet (1) 1_17
+  - first:
+      213: 6520147716839152294
+    second: gifigif-Sheet (1) 1_18
+  - first:
+      213: -8981055158329005837
+    second: gifigif-Sheet (1) 1_19
+  - first:
+      213: -4289482698204500443
+    second: gifigif-Sheet (1) 1_20
+  - first:
+      213: -2724612509959518052
+    second: gifigif-Sheet (1) 1_21
+  - first:
+      213: 3571448220943744834
+    second: gifigif-Sheet (1) 1_22
+  - first:
+      213: -9090542213378208690
+    second: gifigif-Sheet (1) 1_23
+  - first:
+      213: -84841472723429503
+    second: gifigif-Sheet (1) 1_24
+  - first:
+      213: 3933420161607034038
+    second: gifigif-Sheet (1) 1_25
+  - first:
+      213: 1644960353898108217
+    second: gifigif-Sheet (1) 1_26
+  - first:
+      213: -9102495300481189644
+    second: gifigif-Sheet (1) 1_27
+  - first:
+      213: -6566830293431944995
+    second: gifigif-Sheet (1) 1_28
+  - first:
+      213: -8207821799390570197
+    second: gifigif-Sheet (1) 1_29
+  - first:
+      213: 4928608952217303858
+    second: gifigif-Sheet (1) 1_30
+  - first:
+      213: 4367561487295015757
+    second: gifigif-Sheet (1) 1_31
+  - first:
+      213: 6792356812921267569
+    second: gifigif-Sheet (1) 1_32
+  - first:
+      213: -6244558530361292904
+    second: gifigif-Sheet (1) 1_33
+  - first:
+      213: -2860066425757084683
+    second: gifigif-Sheet (1) 1_34
+  - first:
+      213: -9071055645329558859
+    second: gifigif-Sheet (1) 1_35
+  - first:
+      213: -757584945667539350
+    second: gifigif-Sheet (1) 1_36
+  - first:
+      213: 8456922226647584695
+    second: gifigif-Sheet (1) 1_37
+  - first:
+      213: 1474536873033753819
+    second: gifigif-Sheet (1) 1_38
+  - first:
+      213: 1732439773178101186
+    second: gifigif-Sheet (1) 1_39
+  - first:
+      213: -7639999944580111126
+    second: gifigif-Sheet (1) 1_40
+  - first:
+      213: 4872534714860281298
+    second: gifigif-Sheet (1) 1_41
+  - first:
+      213: 1713873840811246347
+    second: gifigif-Sheet (1) 1_42
+  - first:
+      213: -7175745210003857174
+    second: gifigif-Sheet (1) 1_43
+  - first:
+      213: -8619336959719794542
+    second: gifigif-Sheet (1) 1_44
+  - first:
+      213: -5552203205412161009
+    second: gifigif-Sheet (1) 1_45
+  - first:
+      213: 6680814275328337044
+    second: gifigif-Sheet (1) 1_46
+  - first:
+      213: 8774329977912998755
+    second: gifigif-Sheet (1) 1_47
+  - first:
+      213: -6705175585204659261
+    second: gifigif-Sheet (1) 1_48
+  - first:
+      213: 532446179837171911
+    second: gifigif-Sheet (1) 1_49
+  - first:
+      213: -9078242171530715657
+    second: gifigif-Sheet (1) 1_50
+  - first:
+      213: 770400708757255314
+    second: gifigif-Sheet (1) 1_51
+  - first:
+      213: 2744254938643605898
+    second: gifigif-Sheet (1) 1_52
+  - first:
+      213: -1543128894172389592
+    second: gifigif-Sheet (1) 1_53
+  - first:
+      213: -4778954134170774291
+    second: gifigif-Sheet (1) 1_54
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gifigif-Sheet (1) 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 704
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e2faf70e07b36b0800000000000000
+      internalID: -5315530825663566206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gifigif-Sheet (1) 1_1
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 704
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e9057defa376710800000000000000
+      internalID: 1686381451682029153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gifigif-Sheet (1) 1_2
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 704
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32cba12b55279910800000000000000
+      internalID: 1843983645768663611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gifigif-Sheet (1) 1_3
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 0
+        width: 704
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b55fab418bcf6630800000000000000
+      internalID: 3922577556643993008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gifigif-Sheet (1) 1_4
+      rect:
+        serializedVersion: 2
+        x: 2816
+        y: 0
+        width: 704
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad0936406c05cd090800000000000000
+      internalID: -8008437225964203814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gifigif-Sheet (1) 1_5
+      rect:
+        serializedVersion: 2
+        x: 3520
+        y: 0
+        width: 704
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3dbc129c4ec664d0800000000000000
+      internalID: -3141596861780148931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gifigif-Sheet (1) 1_6
+      rect:
+        serializedVersion: 2
+        x: 4224
+        y: 0
+        width: 704
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e889b238bff8fd0800000000000000
+      internalID: -2337373140791292311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gifigif-Sheet (1) 1_7
+      rect:
+        serializedVersion: 2
+        x: 4928
+        y: 0
+        width: 704
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79242b64aacb9aba0800000000000000
+      internalID: -6077118782643223913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gifigif-Sheet (1) 1_8
+      rect:
+        serializedVersion: 2
+        x: 5632
+        y: 0
+        width: 704
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00135ef11f5f8d3f0800000000000000
+      internalID: -875679711552524032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gifigif-Sheet (1) 1_9
+      rect:
+        serializedVersion: 2
+        x: 6336
+        y: 0
+        width: 704
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c168e33a936586df0800000000000000
+      internalID: -186804578983967204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gifigif-Sheet (1) 1_10
+      rect:
+        serializedVersion: 2
+        x: 7040
+        y: 0
+        width: 704
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18ba117dfb928d380800000000000000
+      internalID: -8946354755847738495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gifigif-Sheet (1) 1_11
+      rect:
+        serializedVersion: 2
+        x: 7744
+        y: 0
+        width: 704
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed274a338c241ea0800000000000000
+      internalID: -5903044269445796370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gifigif-Sheet (1) 1_12
+      rect:
+        serializedVersion: 2
+        x: 8448
+        y: 0
+        width: 704
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a26bb5ce0e9462270800000000000000
+      internalID: 8225342999825724970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gifigif-Sheet (1) 1_13
+      rect:
+        serializedVersion: 2
+        x: 9152
+        y: 0
+        width: 704
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bd8031266dfb5cb0800000000000000
+      internalID: -4874023556613108304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gifigif-Sheet (1) 1_14
+      rect:
+        serializedVersion: 2
+        x: 9856
+        y: 0
+        width: 704
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0410b3bf781044d70800000000000000
+      internalID: 9026341236704477504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gifigif-Sheet (1) 1_15
+      rect:
+        serializedVersion: 2
+        x: 10560
+        y: 0
+        width: 704
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8345be027d1c62f0800000000000000
+      internalID: -978374643336002676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gifigif-Sheet (1) 1_16
+      rect:
+        serializedVersion: 2
+        x: 11264
+        y: 0
+        width: 704
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce575758ccff8f700800000000000000
+      internalID: 574490206367217132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gifigif-Sheet (1) 1_17
+      rect:
+        serializedVersion: 2
+        x: 11968
+        y: 0
+        width: 704
+        height: 704
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d94954a28374a080800000000000000
+      internalID: -9177083135733970478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
