@@ -13,4 +13,5 @@ public class DisableMovementUtil : MonoBehaviour
         PlayerInput.instance.CanMove = true;
         OxygenManager.instance.IsDepleting = true;
     }
+
 }

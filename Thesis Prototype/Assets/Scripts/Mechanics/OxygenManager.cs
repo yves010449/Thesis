@@ -51,9 +51,11 @@ public class OxygenManager : MonoBehaviour {
 
     public void ReduceOxygen(int amount) {
         slider.value -= amount;
+        Debug.Log("InCorrect");
     }
     public void RefillOxygen() {
         slider.value = slider.maxValue;
+        Debug.Log("Correct");
     }
     public void IncreaseMaxOxygen(float value) {
         slider.maxValue += value;
