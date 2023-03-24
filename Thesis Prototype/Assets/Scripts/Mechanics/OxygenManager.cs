@@ -51,16 +51,15 @@ public class OxygenManager : MonoBehaviour {
 
     public void ReduceOxygen(int amount) {
         slider.value -= amount;
-        Debug.Log("InCorrect");
     }
     public void RefillOxygen() {
         slider.value = slider.maxValue;
-        Debug.Log("Correct");
     }
     public void IncreaseMaxOxygen(float value) {
         slider.maxValue += value;
     }
     IEnumerator DepleteOxygen() {
+
         while (true) {
             if(slider.value == slider.maxValue) {
                 img.transform.gameObject.SetActive(false);
@@ -70,10 +69,7 @@ public class OxygenManager : MonoBehaviour {
             if (isDepleting && !ConversationManager.Instance.IsConversationActive) {
                 slider.value -= 1;
             }
-            if (slider.value <= 0) {
-                OnDeath?.Invoke();
-                break;
-            }
+
             if(slider.value <= slider.maxValue * 0.35f) {
                 img.transform.gameObject.SetActive(true);
                 yield return new WaitForSeconds(depleteRate+1f);
@@ -82,7 +78,11 @@ public class OxygenManager : MonoBehaviour {
                 img.transform.gameObject.SetActive(false);
                 yield return new WaitForSeconds(depleteRate);
             }
-                
+
+            if (slider.value <= 0) {
+                OnDeath?.Invoke();
+                break;
+            }
         }
 
     }

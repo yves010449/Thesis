@@ -22,8 +22,10 @@ ScriptsOnlyBuild:
     - DisableMovementUtil
     - DoorController
     - EnemyAI
+    - FollowUtil
     - GameManager
     - InteractManager
+    - LearningModuleController
     - LearningModuleManager
     - LineOfSight
     - MaskObjectUtil
@@ -34,16 +36,19 @@ ScriptsOnlyBuild:
     - OnDisableUtil
     - OnStartUtil
     - OxygenManager
+    - PlayerData
     - PlayerDetector
     - PlayerInput
     - Postgame
     - QuestionHolder
     - Respawn
     - RobotUI
+    - SaveManager
     - ScreenEnable
     - ScreenManager
     - SeekBehaviour
     - ShowUI
+    - SparkleController
     - TargetDetector
     - TextManager
     - TimerUtil
@@ -62,22 +67,13 @@ ScriptsOnlyBuild:
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
-    - UnityEditor.Tilemaps.GridBrush
-    - UnityEditor.Tilemaps.GridPaintPaletteClipboard
-    - UnityEditor.Tilemaps.GridPaintPaletteWindow
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
     - UnityEditor.Tilemaps.GridPalettes
-    - UnityEditor.Tilemaps.PaintableSceneViewGrid
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.SceneViewOpenTilePaletteHelper
     - UnityEditor.Tilemaps.TileDragAndDropManager
     - UnityEditor.Tilemaps.TilemapPrefabStageHelper
-    Unity.2D.Tilemap.Extras.Editor.dll:
-    - UnityEditor.Tilemaps.GameObjectBrush
-    - UnityEditor.Tilemaps.GroupBrush
-    - UnityEditor.Tilemaps.LineBrush
-    - UnityEditor.Tilemaps.RandomBrush
     Unity.2D.Tilemap.Extras.dll:
     - UnityEngine.Tilemaps.AnimatedTile
     Unity.Rider.Editor.dll:
@@ -89,12 +85,6 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -117,88 +107,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Slider
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Scenes/MainMenu.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 49
-      Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 1646}
-    - Class: 114
-      Script: {instanceID: 1648}
-    - Class: 114
-      Script: {instanceID: 2392}
-    - Class: 114
-      Script: {instanceID: 2906}
-    - Class: 114
-      Script: {instanceID: 3482}
-    - Class: 114
-      Script: {instanceID: 3984}
-    - Class: 114
-      Script: {instanceID: 4736}
-    - Class: 114
-      Script: {instanceID: 4740}
-    - Class: 114
-      Script: {instanceID: 4768}
-    - Class: 114
-      Script: {instanceID: 5072}
-    - Class: 114
-      Script: {instanceID: 5944}
-    - Class: 114
-      Script: {instanceID: 6630}
-    - Class: 114
-      Script: {instanceID: 6844}
-    - Class: 114
-      Script: {instanceID: 7226}
-    - Class: 114
-      Script: {instanceID: 7252}
-    - Class: 114
-      Script: {instanceID: 7748}
-    - Class: 114
-      Script: {instanceID: 8102}
-    - Class: 114
-      Script: {instanceID: 8658}
-    - Class: 114
-      Script: {instanceID: 8694}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 196
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    Assets/Scenes/Tutorial old.unity:
+    Assets/Scenes/Level 1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -377,6 +286,16 @@ ScriptsOnlyBuild:
       Script: {instanceID: 8902}
     - Class: 114
       Script: {instanceID: 9200}
+    - Class: 114
+      Script: {instanceID: 33312}
+    - Class: 114
+      Script: {instanceID: 264176}
+    - Class: 114
+      Script: {instanceID: 313164}
+    - Class: 114
+      Script: {instanceID: 342510}
+    - Class: 114
+      Script: {instanceID: 419222}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -412,6 +331,87 @@ ScriptsOnlyBuild:
     - Class: 687078895
       Script: {instanceID: 0}
     - Class: 1839735485
+      Script: {instanceID: 0}
+    Assets/Scenes/MainMenu.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 1646}
+    - Class: 114
+      Script: {instanceID: 1648}
+    - Class: 114
+      Script: {instanceID: 2392}
+    - Class: 114
+      Script: {instanceID: 2906}
+    - Class: 114
+      Script: {instanceID: 3482}
+    - Class: 114
+      Script: {instanceID: 3984}
+    - Class: 114
+      Script: {instanceID: 4736}
+    - Class: 114
+      Script: {instanceID: 4740}
+    - Class: 114
+      Script: {instanceID: 4768}
+    - Class: 114
+      Script: {instanceID: 5072}
+    - Class: 114
+      Script: {instanceID: 5944}
+    - Class: 114
+      Script: {instanceID: 6630}
+    - Class: 114
+      Script: {instanceID: 6844}
+    - Class: 114
+      Script: {instanceID: 7226}
+    - Class: 114
+      Script: {instanceID: 7252}
+    - Class: 114
+      Script: {instanceID: 7748}
+    - Class: 114
+      Script: {instanceID: 8102}
+    - Class: 114
+      Script: {instanceID: 8658}
+    - Class: 114
+      Script: {instanceID: 8694}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -968,7 +968,7 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionExit2DMessageListener
   - hash:
       serializedVersion: 2
-      Hash: b3607ae33bc4002f1469c9a84b22536a
+      Hash: fd460bd746c0b54ac704e2589f1d983f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LearningModuleManager
@@ -1974,8 +1974,38 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SaveManager
+  - hash:
+      serializedVersion: 2
+      Hash: 6182b487766c5e65c0d8f34f9631273b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LearningModuleController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SparkleController
+  - hash:
+      serializedVersion: 2
+      Hash: 1b676cd8d4c60948b6baf5f0dbb7dbed
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FollowUtil
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerData
   platform: 20
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
-  - Assets/Scenes/Tutorial old.unity
+  - Assets/Scenes/Level 1.unity
   playerPath: C:/Users/yves0/Desktop/Thesis

@@ -7,8 +7,16 @@ public class DoorController : MonoBehaviour
 {
     [SerializeField]
     Animator animator;
+    [SerializeField]
+    KeyController key;
 
     public bool Locked;
+
+    private void Start() {
+        if (PlayerPrefs.GetInt(key.name) == 1) {
+            Unlock();
+        }
+    }
 
     public void Unlock() {
         Locked = false;

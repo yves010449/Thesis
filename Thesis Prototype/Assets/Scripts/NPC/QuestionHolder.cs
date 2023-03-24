@@ -7,7 +7,13 @@ public class QuestionHolder : MonoBehaviour {
     ChlorobotQuestionManager QuestionManager;
     [SerializeField]
     NPCConversation[] conversations;
-    
+
+
+    private void Start() {
+        if (PlayerPrefs.GetInt(gameObject.name) == 1) {
+            AddQuestions();
+        }
+    }
 
     public void AddQuestions() {
         for (int i = 0; i < conversations.Length; i++) {

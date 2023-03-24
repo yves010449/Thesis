@@ -33,9 +33,16 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 1;
         OnResume?.Invoke();
     }
-    public void StartGame() {
+    public void StartNewGame() {
+        PlayerPrefs.DeleteAll();
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        PlayerPrefs.SetInt("CurrentLevel", 1);
     }
+    public void ContinueGame() {
+
+        SceneManager.LoadScene(PlayerPrefs.GetInt("CurrentLevel"));
+    }
+
     public void MainMenu() {
         SceneManager.LoadScene(0);
     }
