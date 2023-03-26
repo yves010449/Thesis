@@ -23,7 +23,7 @@ public class Checkpoint : MonoBehaviour
             GameManager.instance.SpawnPos = new Vector2(PlayerPrefs.GetFloat("SpawnPosX"), PlayerPrefs.GetFloat("SpawnPosY"));
         }
         else
-            GameManager.instance.SpawnPos = PlayerInput.instance.transform.position;
+            GameManager.instance.SpawnPos = PlayerController.instance.transform.position;
     }
 
     public void SetSpawn() {

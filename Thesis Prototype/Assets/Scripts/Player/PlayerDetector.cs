@@ -2,18 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerDetector : InteractionDetectors
-{
-    public override void Detect() {
-        //colliders.
-    }
+public class PlayerDetector : MonoBehaviour {
 
-    public void Interact() { 
-        if (colliders.Length > 0) {
-            if (colliders[0].TryGetComponent(out Interactions interactions)) {
+    [SerializeField]
+    float range = 2;
+
+
+    public void Interact(Collider2D collider) {
+
+        float distance = Vector3.Distance(transform.position, collider.transform.position);
+        if (collider != null && PlayerController.instance.CanMove && distance<=range) {
+            if (collider.TryGetComponent(out Interactions interactions)) {
                 interactions.Interact();
             }
-            //colliders[0].GetComponent<Interactions>().Interact();
         }
+    }
+    private void OnDrawGizmosSelected() {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(transform.position, range);
     }
 }

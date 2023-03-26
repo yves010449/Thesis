@@ -34647,7 +34647,7 @@ IL_001b:
 		Hashtable_t7565AB92A12227AD5BADD6911F10D87EE52509AC * L_11 = ((XmlObjectSerializerReadContextComplex_t3191879CC364F48E426D575F6F946869607594B3_StaticFields*)il2cpp_codegen_static_fields_for(XmlObjectSerializerReadContextComplex_t3191879CC364F48E426D575F6F946869607594B3_il2cpp_TypeInfo_var))->get_dataContractTypeCache_21();
 		XmlObjectDataContractTypeKey_tA5EDAE3A5C6CD7061B60ABBFAF6F609CE02D15E0 * L_12 = V_1;
 		RuntimeObject * L_13;
-		L_13 = VirtualFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(22 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_11, L_12);
+		L_13 = VirtualFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(21 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_11, L_12);
 		V_2 = ((XmlObjectDataContractTypeInfo_t1FD201ED2FCB27EF2FD3A3B1A89A1DEFC5A38E9B *)CastclassClass((RuntimeObject*)L_13, XmlObjectDataContractTypeInfo_t1FD201ED2FCB27EF2FD3A3B1A89A1DEFC5A38E9B_il2cpp_TypeInfo_var));
 		XmlObjectDataContractTypeInfo_t1FD201ED2FCB27EF2FD3A3B1A89A1DEFC5A38E9B * L_14 = V_2;
 		if (L_14)
@@ -34874,7 +34874,7 @@ IL_011d:
 			Hashtable_t7565AB92A12227AD5BADD6911F10D87EE52509AC * L_66 = ((XmlObjectSerializerReadContextComplex_t3191879CC364F48E426D575F6F946869607594B3_StaticFields*)il2cpp_codegen_static_fields_for(XmlObjectSerializerReadContextComplex_t3191879CC364F48E426D575F6F946869607594B3_il2cpp_TypeInfo_var))->get_dataContractTypeCache_21();
 			XmlObjectDataContractTypeKey_tA5EDAE3A5C6CD7061B60ABBFAF6F609CE02D15E0 * L_67 = V_1;
 			XmlObjectDataContractTypeInfo_t1FD201ED2FCB27EF2FD3A3B1A89A1DEFC5A38E9B * L_68 = V_2;
-			VirtualActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(23 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_66, L_67, L_68);
+			VirtualActionInvoker2< RuntimeObject *, RuntimeObject * >::Invoke(22 /* System.Void System.Collections.Hashtable::set_Item(System.Object,System.Object) */, L_66, L_67, L_68);
 		}
 
 IL_0129:

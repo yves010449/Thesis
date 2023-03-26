@@ -160,7 +160,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 1.5
+  m_Radius: 2
 --- !u!1 &2236414783592330956
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,7 +330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2236414784150152326}
   - component: {fileID: 2236414784150152320}
-  - component: {fileID: 2236414784150152321}
+  - component: {fileID: 5913808986327082058}
   m_Layer: 6
   m_Name: Interactable
   m_TagString: Untagged
@@ -405,8 +405,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
---- !u!58 &2236414784150152321
-CircleCollider2D:
+--- !u!70 &5913808986327082058
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -415,12 +415,12 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 1.5
+  m_Size: {x: 0.9516274, y: 1.8499057}
+  m_Direction: 0
 --- !u!1 &2236414784669325703
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,7 +434,7 @@ GameObject:
   - component: {fileID: 2236414784669325696}
   - component: {fileID: 2236414784669325697}
   - component: {fileID: 53148723147881443}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Robot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -551,7 +551,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2236414784669325703}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f0bd969692f24a4abca6a0ee1b5e359, type: 3}
   m_Name: 

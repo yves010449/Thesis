@@ -52,7 +52,7 @@ public class ChlorobotQuestionManager : MonoBehaviour
 
         else if (ActiveConversations.Count > 0) {
 
-            //int index = Random.Range(0, ActiveConversations.Count-1);
+            int index = Random.Range(0, ActiveConversations.Count-1);
             
             ConversationManager.Instance.StartConversation(ActiveConversations[index]);
             InactiveConversations.Add(ActiveConversations[index]);

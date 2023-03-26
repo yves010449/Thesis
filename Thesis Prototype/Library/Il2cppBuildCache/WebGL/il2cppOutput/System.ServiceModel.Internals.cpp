@@ -12902,7 +12902,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void EtwDiagnosticTrace_CreateEtwProvider_m9D
 		Guid_t  L_6 = L_5;
 		RuntimeObject * L_7 = Box(Guid_t_il2cpp_TypeInfo_var, &L_6);
 		RuntimeObject * L_8;
-		L_8 = VirtualFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(22 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_4, L_7);
+		L_8 = VirtualFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(21 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_4, L_7);
 		__this->set_etwProvider_15(((EtwProvider_t0E3B01EF6F0FE520BB624C34C62407268728469D *)CastclassSealed((RuntimeObject*)L_8, EtwProvider_t0E3B01EF6F0FE520BB624C34C62407268728469D_il2cpp_TypeInfo_var)));
 		EtwProvider_t0E3B01EF6F0FE520BB624C34C62407268728469D * L_9 = __this->get_etwProvider_15();
 		if (L_9)
@@ -12929,7 +12929,7 @@ IL_0045:
 			Guid_t  L_14 = L_13;
 			RuntimeObject * L_15 = Box(Guid_t_il2cpp_TypeInfo_var, &L_14);
 			RuntimeObject * L_16;
-			L_16 = VirtualFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(22 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_12, L_15);
+			L_16 = VirtualFuncInvoker1< RuntimeObject *, RuntimeObject * >::Invoke(21 /* System.Object System.Collections.Hashtable::get_Item(System.Object) */, L_12, L_15);
 			__this->set_etwProvider_15(((EtwProvider_t0E3B01EF6F0FE520BB624C34C62407268728469D *)CastclassSealed((RuntimeObject*)L_16, EtwProvider_t0E3B01EF6F0FE520BB624C34C62407268728469D_il2cpp_TypeInfo_var)));
 			EtwProvider_t0E3B01EF6F0FE520BB624C34C62407268728469D * L_17 = __this->get_etwProvider_15();
 			if (L_17)
