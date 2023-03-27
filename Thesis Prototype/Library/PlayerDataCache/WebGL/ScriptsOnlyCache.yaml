@@ -1,9 +1,9 @@
 ScriptsOnlyBuild:
   usedScripts:
-    Assembly-CSharp-Editor.dll:
-    - DialogueEditor.DialogueEditorWindow
     Assembly-CSharp.dll:
     - AIData
+    - AchievementData
+    - AchievementsManager
     - AiPatrol
     - Animation
     - ChangeScreen
@@ -50,7 +50,6 @@ ScriptsOnlyBuild:
     - QuestionHolder
     - Respawn
     - RobotUI
-    - SaveManager
     - ScreenEnable
     - ScreenManager
     - SeekBehaviour
@@ -93,6 +92,14 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -291,8 +298,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 8008}
     - Class: 114
-      Script: {instanceID: 8128}
-    - Class: 114
       Script: {instanceID: 8148}
     - Class: 114
       Script: {instanceID: 8156}
@@ -318,6 +323,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 9136}
     - Class: 114
       Script: {instanceID: 9256}
+    - Class: 114
+      Script: {instanceID: 452444}
+    - Class: 114
+      Script: {instanceID: 512938}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -394,6 +403,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4002}
     - Class: 114
+      Script: {instanceID: 4732}
+    - Class: 114
       Script: {instanceID: 4754}
     - Class: 114
       Script: {instanceID: 4758}
@@ -402,7 +413,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 5094}
     - Class: 114
+      Script: {instanceID: 5554}
+    - Class: 114
       Script: {instanceID: 5772}
+    - Class: 114
+      Script: {instanceID: 5890}
     - Class: 114
       Script: {instanceID: 5978}
     - Class: 114
@@ -412,15 +427,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 7264}
     - Class: 114
+      Script: {instanceID: 7272}
+    - Class: 114
       Script: {instanceID: 7290}
     - Class: 114
       Script: {instanceID: 7786}
     - Class: 114
       Script: {instanceID: 8148}
     - Class: 114
+      Script: {instanceID: 8548}
+    - Class: 114
       Script: {instanceID: 8706}
     - Class: 114
       Script: {instanceID: 8742}
+    - Class: 114
+      Script: {instanceID: 512938}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -436,6 +457,8 @@ ScriptsOnlyBuild:
     - Class: 223
       Script: {instanceID: 0}
     - Class: 224
+      Script: {instanceID: 0}
+    - Class: 687078895
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -1839,12 +1862,6 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SaveManager
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: RemoteTestResultSender
@@ -2118,6 +2135,18 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: b0738cb0d4336261ee205fb1ab76fa96
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AchievementsManager
+  - hash:
+      serializedVersion: 2
+      Hash: d32bd215dd016ab79e6bdb2100dfa30a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AchievementData
   platform: 20
   scenePathNames:
   - Assets/Scenes/MainMenu.unity

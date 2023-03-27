@@ -16,7 +16,7 @@ public class MobileInput : InputController
     LayerMask layer;
 
 
-    void FixedUpdate() {
+    void Update() {
         if (Input.GetKeyDown(KeyCode.Escape)) {
             PauseInput();
         }
@@ -25,7 +25,7 @@ public class MobileInput : InputController
         movementInput.y = joystick.Vertical;
 
         movementInput.Normalize();
-        playerController.OnMovement?.Invoke(movementInput);
+        playerController.Movement = movementInput;
 
         Touch touch = Input.GetTouch(0);
 

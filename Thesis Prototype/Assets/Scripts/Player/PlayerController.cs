@@ -11,10 +11,13 @@ public class PlayerController : MonoBehaviour {
     public UnityEvent<Vector2> OnMovement;
     public UnityEvent  OnMap, OnLearningTerminal;
     public UnityEvent<Collider2D> OnInteract;
+
+    Vector2 movement;
     bool canMove = true;
 
 
     public bool CanMove { get => canMove; set => canMove = value; }
+    public Vector2 Movement { get => movement; set => movement = value; }
 
     private void Awake() {
         instance = this;
@@ -24,9 +27,10 @@ public class PlayerController : MonoBehaviour {
     void Update() {
 
         if (ConversationManager.Instance.IsConversationActive || !CanMove) {
-            OnMovement?.Invoke(new Vector2(0, 0));
+            movement = new Vector2(0, 0);
             return;
         }
+        OnMovement?.Invoke(movement);
     }
 
 

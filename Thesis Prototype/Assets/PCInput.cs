@@ -12,7 +12,7 @@ public class PCInput : InputController
     [SerializeField]
     LayerMask layer;
 
-     void FixedUpdate() {
+     void Update() {
         if (Input.GetKeyDown(KeyCode.Escape)) {
             PauseInput();
         }
@@ -41,7 +41,7 @@ public class PCInput : InputController
         movementInput.y = Input.GetAxisRaw("Vertical");
 
         movementInput.Normalize();
-        playerController.OnMovement?.Invoke(movementInput);
+        playerController.Movement = movementInput;
     }
 
     public override Vector2 MovementInput() {
