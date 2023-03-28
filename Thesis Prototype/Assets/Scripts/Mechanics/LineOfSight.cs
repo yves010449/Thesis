@@ -16,10 +16,7 @@ public class LineOfSight : MonoBehaviour
 
     IEnumerator StartCoroutine()
     {
-        float size = (oxygenManager.slider.value / oxygenManager.slider.maxValue);
-        if(size > cap) {
-            transform.localScale = new Vector2(size, size);
-        }
+       
         yield return new WaitForSeconds(0.1f);
         StartCoroutine(StartCoroutine());
     }

@@ -107,12 +107,13 @@ namespace DialogueEditor
         public void OnClick()
         {
             if (!ConversationManager.Instance.AllowMouseInteraction) { return; }
-
+            SoundManager.instance.Play("Button");
             DoClickBehaviour();
         }
 
         public void OnButtonPressed()
         {
+            SoundManager.instance.Play("Button");
             DoClickBehaviour();
         }
 

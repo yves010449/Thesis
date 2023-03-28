@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class AchievementsManager : MonoBehaviour {
     public static AchievementsManager instance;
 
     [SerializeField]
-    Animator animator;
-    [SerializeField]
     TextMeshProUGUI tmpText;
     [SerializeField]
     Image image;
+
+    public UnityEvent OnActivate;
 
     [SerializeField]
     List<AchievementData> LearningModuleCollectAchievement = new List<AchievementData>();
@@ -33,7 +34,7 @@ public class AchievementsManager : MonoBehaviour {
                 if (LearningModuleManager.instance.learningModuleCollected == achievementData.requirement && !achievementData.activated) {
                     tmpText.SetText(achievementData.text);
                     image.sprite = achievementData.sprite;
-                    animator.SetTrigger("Activate");
+                    ActivateAchievement();
                     achievementData.Activate();
                 }
             }
@@ -41,7 +42,7 @@ public class AchievementsManager : MonoBehaviour {
                 if (LearningModuleManager.instance.totalDeaths == achievementData.requirement && !achievementData.activated) {
                     tmpText.SetText(achievementData.text);
                     image.sprite = achievementData.sprite;
-                    animator.SetTrigger("Activate");
+                    ActivateAchievement();
                     achievementData.Activate();
                 }
             }
@@ -57,7 +58,7 @@ public class AchievementsManager : MonoBehaviour {
                 if (LearningModuleManager.instance.totalCorrectAnswers == achievementData.requirement && !achievementData.activated) {
                     tmpText.SetText(achievementData.text);
                     image.sprite = achievementData.sprite;
-                    animator.SetTrigger("Activate");
+                    ActivateAchievement();
                     achievementData.Activate();
                 }
             }
@@ -66,7 +67,9 @@ public class AchievementsManager : MonoBehaviour {
         
     }
 
-
+    public void ActivateAchievement() {
+        OnActivate?.Invoke();
+    }
 
 
 }

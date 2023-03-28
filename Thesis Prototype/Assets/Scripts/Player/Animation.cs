@@ -12,6 +12,7 @@ public class Animation : MonoBehaviour
 
     public Vector2 Input { get => input; set => input = value; }
 
+    Vector2 lastDir;
     private void Awake() {
         animator = GetComponent<Animator>();
         rd = GetComponent<SpriteRenderer>();
@@ -27,14 +28,17 @@ public class Animation : MonoBehaviour
         }
 
         if (input.x != 0 || input.y != 0) {
-            animator.SetBool("isMoving", true); 
+            animator.SetBool("isMoving", true);
+            animator.SetFloat("inputX", input.x);
+            animator.SetFloat("inputY", input.y);
         }
         else {
             animator.SetBool("isMoving", false);
+            animator.SetFloat("lastX", lastDir.x);
+            animator.SetFloat("lastY", lastDir.y);
         }
 
-        animator.SetFloat("inputX", input.x);
-        animator.SetFloat("inputY", input.y);
+        
 
         Flip();
     }
@@ -45,6 +49,13 @@ public class Animation : MonoBehaviour
         }
         if (input.x > 0) {
             rd.flipX = false;
+        }
+    }
+
+    private void LateUpdate() {
+        if(input.x != 0 || input.y != 0) {
+            lastDir.x = input.x;
+            lastDir.y = input.y;
         }
     }
 

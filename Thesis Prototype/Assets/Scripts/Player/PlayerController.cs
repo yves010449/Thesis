@@ -30,7 +30,9 @@ public class PlayerController : MonoBehaviour {
             movement = new Vector2(0, 0);
             return;
         }
-        OnMovement?.Invoke(movement);
+        else {
+            OnMovement?.Invoke(movement);
+        }
     }
 
 

@@ -13,6 +13,8 @@ public class ChlorobotQuestionManager : MonoBehaviour
     public List<NPCConversation> InactiveConversations = new List<NPCConversation>();
 
     [SerializeField]
+    bool randomized;
+    [SerializeField]
     TextMeshProUGUI ScreenText;
 
     [SerializeField]
@@ -43,17 +45,16 @@ public class ChlorobotQuestionManager : MonoBehaviour
             //ScreenText.SetText("");
         }
     }
-    int index = 0;
 
     public void StartConversation() {
+        int index = 0;
         if (ActiveConversations.Count == 0 && InactiveConversations.Count == 0) {
             ConversationManager.Instance.StartConversation(NoQuestionDialogue);
         }
-
         else if (ActiveConversations.Count > 0) {
-
-            int index = Random.Range(0, ActiveConversations.Count-1);
-            
+            if (randomized) {
+                index = Random.Range(0, ActiveConversations.Count - 1);
+            }
             ConversationManager.Instance.StartConversation(ActiveConversations[index]);
             InactiveConversations.Add(ActiveConversations[index]);
             ActiveConversations.Remove(ActiveConversations[index]);
