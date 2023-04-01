@@ -383,6 +383,7 @@
 "Assets/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs"
 "Assets/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs"
 "Assets/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs"
+"Assets/LearningTerminalController.cs"
 "Assets/MobileInput.cs"
 "Assets/MobileJoystick.cs"
 "Assets/PCInput.cs"

@@ -25,7 +25,7 @@ public class OxygenManager : MonoBehaviour {
     [Range(0.10f, 1)]
     [SerializeField]
     float cap = 0.35f;
-
+    public float size;
     public UnityEvent OnDeath;
 
     bool isDepleting = true;
@@ -39,7 +39,6 @@ public class OxygenManager : MonoBehaviour {
     // Start is called before the first frame update
     private void Start() {
         StartCorotine();
-        DecreaseLOS();
     }
     public void StartCorotine() {
         StartCoroutine("DepleteOxygen");
@@ -74,7 +73,11 @@ public class OxygenManager : MonoBehaviour {
     IEnumerator DepleteOxygen() {
 
         while (true) {
-            if(slider.value == slider.maxValue) {
+            DecreaseLOS();
+            if (size < cap) {
+                LineOfsight.localScale = new Vector2(cap, cap);
+            }
+            if (slider.value == slider.maxValue) {
                 img.transform.gameObject.SetActive(false);
                 yield return new WaitForSeconds(10);
             }
@@ -83,12 +86,11 @@ public class OxygenManager : MonoBehaviour {
                 slider.value -= 1;
             }
 
-            if(slider.value <= slider.maxValue * cap) { 
+            if(slider.value <= slider.maxValue * cap) {
                 img.transform.gameObject.SetActive(true);
                 yield return new WaitForSeconds(depleteRate+1f);
             }
             else {
-                DecreaseLOS();
                 img.transform.gameObject.SetActive(false);
                 yield return new WaitForSeconds(depleteRate);
             }
@@ -100,8 +102,12 @@ public class OxygenManager : MonoBehaviour {
 
     }
     public void DecreaseLOS() {
-        float size = (slider.value / slider.maxValue);
-        LineOfsight.localScale = new Vector2(size, size);
+        size = (slider.value / slider.maxValue);
+        if(size > cap) {
+            LineOfsight.localScale = new Vector2(size, size);
+        }
+        
+
     }
 
 }

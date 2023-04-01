@@ -10,6 +10,7 @@ public class PlayerData : MonoBehaviour
         if (PlayerPrefs.HasKey("playerX") && PlayerPrefs.HasKey("playerY")) {
             transform.position = new Vector2(PlayerPrefs.GetFloat("playerX"), PlayerPrefs.GetFloat("playerY"));
             OxygenManager.instance.slider.value = PlayerPrefs.GetFloat("Oxygen");
+            OxygenManager.instance.size = PlayerPrefs.GetFloat("FovSize");
         }
     }
 
@@ -19,5 +20,6 @@ public class PlayerData : MonoBehaviour
         PlayerPrefs.SetFloat("playerX", transform.position.x);
         PlayerPrefs.SetFloat("playerY", transform.position.y);
         PlayerPrefs.SetFloat("Oxygen", OxygenManager.instance.slider.value);
+        PlayerPrefs.SetFloat("FovSize", OxygenManager.instance.size);
     }
 }

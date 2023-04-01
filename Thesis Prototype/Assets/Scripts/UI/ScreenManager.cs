@@ -1,23 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScreenManager : MonoBehaviour
 {
-    public GameObject[] screens;
+    [SerializeField]
+    TextMeshProUGUI ScreenText;
+    ScrollRect scrollRect;
 
-
-    public void DisplayPanel(GameObject gameObj) {
-        DisableChild();
-        gameObj.SetActive(true);
+    private void Awake() {
+        scrollRect = GetComponentInChildren<ScrollRect>();
     }
 
-    public void DisableChild() {
-        foreach (GameObject screen in screens)
-            screen.gameObject.SetActive(false);
+    public void SetText(CodeText code) {
+        ScreenText.SetText(code.Code);
+        scrollRect.verticalNormalizedPosition = 1;
+    }
+    public void ClearText() {
+        ScreenText.SetText("");
+        scrollRect.verticalNormalizedPosition = 1;
     }
 
     private void OnDisable() {
-        DisableChild();
+        ClearText();
     }
 }

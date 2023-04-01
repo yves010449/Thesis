@@ -335,6 +335,7 @@
 "Assets/Joystick Pack/Scripts/Joysticks/FixedJoystick.cs"
 "Assets/Joystick Pack/Scripts/Joysticks/FloatingJoystick.cs"
 "Assets/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs"
+"Assets/LearningTerminalController.cs"
 "Assets/MobileInput.cs"
 "Assets/MobileJoystick.cs"
 "Assets/PCInput.cs"
@@ -393,6 +394,8 @@
 "Assets/Scripts/Util/ScreenEnable.cs"
 "Assets/Scripts/Util/TimerUtil.cs"
 "Assets/Scripts/Util/Trigger.cs"
+"Assets/Sound.cs"
+"Assets/SoundManager.cs"
 -langversion:8.0
 
 /deterministic

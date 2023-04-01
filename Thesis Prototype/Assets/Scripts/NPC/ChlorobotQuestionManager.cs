@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DialogueEditor;
 using TMPro;
+using UnityEngine.UI;
 
 public class ChlorobotQuestionManager : MonoBehaviour
 {
@@ -19,6 +20,9 @@ public class ChlorobotQuestionManager : MonoBehaviour
 
     [SerializeField]
     NPCConversation NoQuestionDialogue;
+
+    [SerializeField]
+    ScrollRect scrollRect;
 
     private void Awake() {
         instance = this;
@@ -72,7 +76,7 @@ public class ChlorobotQuestionManager : MonoBehaviour
 
     public void SetText(CodeText code) {
         ScreenText.SetText(code.Code);
-        //GetComponent<ScrollRect>().verticalNormalizedPosition = 0;
+        scrollRect.verticalNormalizedPosition = 1;
     }
 
 
