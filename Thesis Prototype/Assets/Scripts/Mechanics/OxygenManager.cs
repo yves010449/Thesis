@@ -73,7 +73,6 @@ public class OxygenManager : MonoBehaviour {
     IEnumerator DepleteOxygen() {
 
         while (true) {
-            DecreaseLOS();
             if (size < cap) {
                 LineOfsight.localScale = new Vector2(cap, cap);
             }
@@ -101,6 +100,10 @@ public class OxygenManager : MonoBehaviour {
         }
 
     }
+    private void Update() {
+        DecreaseLOS();
+    }
+
     public void DecreaseLOS() {
         size = (slider.value / slider.maxValue);
         if(size > cap) {
