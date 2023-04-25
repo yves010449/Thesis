@@ -20,6 +20,7 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        
         if (ConversationManager.Instance.IsConversationActive || !PlayerController.instance.CanMove) {
             rb.velocity = Vector2.zero;
             return;

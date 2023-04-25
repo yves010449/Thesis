@@ -27,16 +27,18 @@ public class MobileInput : InputController
         movementInput.Normalize();
         playerController.Movement = movementInput;
 
-        Touch touch = Input.GetTouch(0);
-
-        Vector3 touchPosition = touch.position;
-        touchPosition.z = mainCamera.nearClipPlane;
-        Vector2 mouseWorldPosition = mainCamera.ScreenToWorldPoint(touchPosition);
-
-        Collider2D detectedCollider =
-            Physics2D.OverlapBox(mouseWorldPosition, detectionBoxSize, rotationAngle, layer);
+        
 
         if (Input.touchCount > 0) {
+            Touch touch = Input.GetTouch(0);
+
+            Vector3 touchPosition = touch.position;
+            touchPosition.z = mainCamera.nearClipPlane;
+            Vector2 mouseWorldPosition = mainCamera.ScreenToWorldPoint(touchPosition);
+
+            Collider2D detectedCollider =
+                Physics2D.OverlapBox(mouseWorldPosition, detectionBoxSize, rotationAngle, layer);
+
             if (detectedCollider != null) {
                 InteractInput(detectedCollider);
             }

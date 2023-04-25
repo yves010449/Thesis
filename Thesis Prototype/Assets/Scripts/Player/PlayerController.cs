@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour {
     public UnityEvent<Collider2D> OnInteract;
 
     Vector2 movement;
+    
     bool canMove = true;
 
 

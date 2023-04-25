@@ -39,9 +39,18 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("CurrentLevel", 1);
     }
     public void ContinueGame() {
-
         SceneManager.LoadScene(PlayerPrefs.GetInt("CurrentLevel"));
     }
+    public void NextLevel() {
+        int level = PlayerPrefs.GetInt("CurrentLevel");
+        //PlayerPrefs.DeleteAll();
+        PlayerPrefs.SetInt("CurrentLevel", level + 1);
+        SceneManager.LoadScene(level + 1);
+        
+      
+        
+    }
+
 
     public void MainMenu() {
         SceneManager.LoadScene(0);

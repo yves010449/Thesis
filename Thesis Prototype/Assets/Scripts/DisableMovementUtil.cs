@@ -5,9 +5,10 @@ using UnityEngine;
 public class DisableMovementUtil : MonoBehaviour {
 
     private void OnEnable() {
-        PlayerController.instance.CanMove = false;
         OxygenManager.instance.IsDepleting = false;
-        if (MobileJoystick.instance.mobileInput.enabled == true) {
+        PlayerController.instance.CanMove = false;
+        
+        if (MobileJoystick.instance.mobileInput.enabled == true && MobileJoystick.instance.mobileInput != null) {
             MobileJoystick.instance.gameObject.SetActive(false);
         }
     }
