@@ -12,21 +12,29 @@ public class DoorController : MonoBehaviour
 
     public bool Locked;
 
+    InteractManager interactManager;
+
+    private void Awake() {
+        interactManager = GetComponent<InteractManager>();
+    }
+
     private void Start() {
         if (PlayerPrefs.GetInt(key.name) == 1) {
             Unlock();
+            
         }
     }
 
     public void Unlock() {
         Locked = false;
+        interactManager.interactable = false;
     }
     public void Lock() {
         Locked = true;
     }
 
     public void Open() {
-        if (!Locked) {
+        if (!Locked) {      
             animator.SetBool("isOpen", true);
         }
         

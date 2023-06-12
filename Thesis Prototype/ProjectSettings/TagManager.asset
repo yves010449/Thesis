@@ -40,6 +40,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Marker
+    uniqueID: 2698409085
+    locked: 0
   - name: Foreground
     uniqueID: 2261875393
     locked: 0

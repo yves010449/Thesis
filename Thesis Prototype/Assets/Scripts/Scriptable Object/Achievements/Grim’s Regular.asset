@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9464499027f89b4d9d84e4227274fbf, type: 3}
+  m_Name: "Grim\u2019s Regular"
+  m_EditorClassIdentifier: 
+  sprite: {fileID: -5573490928619099869, guid: bfc6a20556169d348a57f2f0aa5fcd0f, type: 3}
+  title: "Grim\u2019s Regular"
+  description: Die 5 times
+  unlocked: 0

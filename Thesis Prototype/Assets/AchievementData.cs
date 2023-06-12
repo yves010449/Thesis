@@ -8,24 +8,29 @@ public class AchievementData : MonoBehaviour
 {
     [SerializeField]
     Image image;
+    [SerializeField]
+    TextMeshProUGUI tmpTitle;
+    [SerializeField]
+    TextMeshProUGUI tmpDesc;
 
-    public Sprite sprite;
-    public string text;
+
+    public AchievementsSO achievementsSO;
 
     public int requirement;
     public bool activated = false;
 
-    TextMeshProUGUI tmpText;
 
-    private void Awake() {
-        //image = GetComponentInChildren<Image>();
-        tmpText = GetComponentInChildren<TextMeshProUGUI>();
-    }
+
+
+
+
 
     private void OnEnable() {
-        tmpText.SetText(text);
-        image.sprite = sprite;
-        if (PlayerPrefs.GetInt(gameObject.name) == 1) {
+        tmpTitle.SetText(achievementsSO.title);
+        tmpDesc.SetText(achievementsSO.description);
+
+        image.sprite = achievementsSO.sprite;
+        if (PlayerPrefs.GetInt(achievementsSO.name) == 1) {
             image.color = new Color(255, 255, 255, 1f);
             activated = true;
         }
@@ -35,7 +40,7 @@ public class AchievementData : MonoBehaviour
     }
 
     public void Activate() {
-        PlayerPrefs.SetInt(gameObject.name, 1);
+        PlayerPrefs.SetInt(achievementsSO.name, 1);
         activated = true;
     }
 }

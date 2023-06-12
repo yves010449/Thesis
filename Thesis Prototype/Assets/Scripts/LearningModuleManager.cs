@@ -25,7 +25,7 @@ public class LearningModuleManager : MonoBehaviour
     [SerializeField]
     Button[] buttons;
 
-    public UnityEvent OnCollectAll, OnCorrect, OnInCorrect;
+    public UnityEvent OnCollectAll, OnCorrect, OnInCorrect, OnCollect;
     // Start is called before the first frame update
 
     public int totalQuestions = 0;
@@ -64,6 +64,7 @@ public class LearningModuleManager : MonoBehaviour
         UpgradeManager.instance.upgradePoints++;
         UpgradeManager.instance.CheckUpgradePoints();
         CheckModules();
+        OnCollect?.Invoke();
     }
     public void CheckModules() {
         if(learningModuleCollected >= maxlearningModule) {
@@ -72,16 +73,16 @@ public class LearningModuleManager : MonoBehaviour
     }
 
     public void CorrectAnswer() {
-        OnCorrect?.Invoke();
         totalCorrectAnswers++;
         totalQuestions++;
         PlayerPrefs.SetInt("totalCorrectAnswers", totalCorrectAnswers);
         PlayerPrefs.SetInt("totalQuestions", totalQuestions);
+        OnCorrect?.Invoke();
     }
     public void IncorrectAnswer() {
-        OnInCorrect?.Invoke();
         totalQuestions++;
         PlayerPrefs.SetInt("totalQuestions", totalQuestions);
+        OnInCorrect?.Invoke();
     }
     public void Death() {
         PlayerController.instance.CanMove = false;

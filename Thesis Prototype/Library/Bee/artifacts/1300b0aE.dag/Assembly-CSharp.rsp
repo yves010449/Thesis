@@ -429,6 +429,7 @@
 "Assets/Scripts/Postgame.cs"
 "Assets/Scripts/ReavelRoom.cs"
 "Assets/Scripts/RobotAnimator.cs"
+"Assets/Scripts/Scriptable Object/Achievements/AchievementsSO.cs"
 "Assets/Scripts/Serialization/SaveData.cs"
 "Assets/Scripts/Serialization/SerializationManager.cs"
 "Assets/Scripts/SparkleController.cs"
